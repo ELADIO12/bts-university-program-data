@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "id": "oxford-archaeological-science-msc",
+  "verification_date": "2026-10-23",
+  "review_status": "partial",
+  "human_review": "pending",
+  "publication_status": "research_only_not_approved",
+  "fields": {
+    "university_name": {
+      "value": "University of Oxford",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "University identity",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "university_identity": {
+      "value": "ox.ac.uk",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "University domain (local normalized identity)",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "bts_university_slug": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "BTS mapping unavailable; no production lookup performed. Supply the confirmed BTS slug before any sandbox matching test."
+    },
+    "program_title": {
+      "value": "Archaeological Science",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Course title",
+          "note": "Factual extraction; human review pending."
+        },
+        {
+          "source_id": "oxford-graduate-directory",
+          "locator": "Courses offered > MSc in Archaeological Science (full time)",
+          "note": "Standalone postgraduate course listing."
+        }
+      ],
+      "review_note": "Normalized title omits the MSc prefix; official heading is MSc in Archaeological Science."
+    },
+    "qualification": {
+      "value": "MSc",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Degree awarded / Course title and award",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "degree_level": {
+      "value": "postgraduate_masters",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Graduate / Undergraduate heading; normalized category",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "academic_subject": {
+      "value": "Archaeological science",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "About the course / Overview; normalized subject label",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "duration": {
+      "value": {
+        "amount": 12,
+        "unit": "months"
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Expected length",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "study_mode": {
+      "value": "Full-time",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Attendance",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "location": {
+      "value": "Oxford; School of Archaeology, 1 South Parks Road",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Course details > Attendance; Resources to support your study",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "language_of_instruction": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "English admission requirements alone do not verify the language of all teaching."
+    },
+    "international_tuition": {
+      "value": {
+        "amount": 40730,
+        "currency": "GBP",
+        "period": "year",
+        "academic_year": "2027-28",
+        "fee_status": "Overseas",
+        "note": "Tuition only; excludes living costs and additional charges. Future years may increase."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Funding and costs > Annual course fees",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "entry_requirements": {
+      "value": "First-class or strong upper-second honours degree in archaeology or a related subject; UK minimum normally 67%. Three referees and supporting documents required. International equivalencies and full conditions are on Oxford’s page.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Entry requirements",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "english_requirements": {
+      "value": "Higher level; IELTS Academic 7.5 overall and 7.0 per component. Other accepted tests, exemptions and validity conditions: consult Oxford.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "English language proficiency",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "application_url": {
+      "value": "https://www.ox.ac.uk/admissions/graduate/courses/msc-archaeological-science",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Completing your application",
+          "note": "Guidance section, not a verified working application login."
+        }
+      ],
+      "review_note": "Official course page includes application guidance. Linked application login could not be fetched; usability requires manual evidence collection."
+    },
+    "source_url": {
+      "value": "https://www.ox.ac.uk/admissions/graduate/courses/msc-archaeological-science",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "Canonical official course page",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "summary": {
+      "value": "Scientific approaches to archaeological evidence, with laboratory teaching and a research project.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeological-science",
+          "locator": "About the course / Overview; researcher-written summary",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    }
+  }
+}

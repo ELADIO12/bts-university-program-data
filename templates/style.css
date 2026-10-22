@@ -1,0 +1,18 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #172d38; background: #f7f8f6; line-height: 1.6; }
+body { margin: 0; }
+header, main, footer { max-width: 960px; margin: auto; padding: 1.5rem; }
+header { border-bottom: 3px solid #23736a; }
+header > a { font-weight: 750; text-decoration: none; }
+header p, small { font-size: .85rem; }
+h1 { font-family: Georgia, serif; line-height: 1.2; font-size: clamp(2rem, 5vw, 3rem); }
+a { color: #115d75; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: .2em; }
+a:focus-visible { outline: 3px solid #b45d11; outline-offset: 4px; }
+.notice { padding: 1rem; background: #fff4da; border-left: 4px solid #b45d11; }
+dt { font-weight: 750; border-top: 1px solid #c4d0cd; padding-top: 1rem; }
+dd { margin: 0 0 1.5rem; overflow-wrap: anywhere; }
+dd p { margin-bottom: .25rem; }
+dd ul { font-size: .85rem; padding-left: 1.25rem; }
+.programs { padding: 0; list-style: none; }
+.programs > li { background: white; border: 1px solid #c4d0cd; margin: 1rem 0; padding: 1.25rem; border-radius: 6px; }
+footer { border-top: 1px solid #c4d0cd; font-size: .85rem; }

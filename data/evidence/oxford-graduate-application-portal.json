@@ -1,0 +1,9 @@
+{
+  "id": "oxford-graduate-application-portal",
+  "url": "https://evision.ox.ac.uk/urd/sits.urd/run/siw_ipp_lgn.login?code1=TM_AS1_NAL&code2=0012&process=siw_ipp_app",
+  "title": "Oxford graduate application portal (manual evidence required)",
+  "accessed_on": "2026-10-23",
+  "access_status": "manual_evidence_required",
+  "method": "One web research-tool fetch of the official Apply link; target content not accessible.",
+  "note": "Fetch returned a cache-miss error, not a verified HTTP 403. No login, retry or bypass. Requires authorized manual evidence collection; not used to verify published facts."
+}

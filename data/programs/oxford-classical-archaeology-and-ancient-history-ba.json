@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "id": "oxford-classical-archaeology-and-ancient-history-ba",
+  "verification_date": "2026-10-23",
+  "review_status": "partial",
+  "human_review": "pending",
+  "publication_status": "research_only_not_approved",
+  "fields": {
+    "university_name": {
+      "value": "University of Oxford",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "University identity",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "university_identity": {
+      "value": "ox.ac.uk",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "University domain (local normalized identity)",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "bts_university_slug": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "BTS mapping unavailable; no production lookup performed. Supply the confirmed BTS slug before any sandbox matching test."
+    },
+    "program_title": {
+      "value": "Classical Archaeology and Ancient History",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Course title",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "qualification": {
+      "value": "BA",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Degree awarded / Course title and award",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "degree_level": {
+      "value": "undergraduate",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Graduate / Undergraduate heading; normalized category",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "academic_subject": {
+      "value": "Classical archaeology and ancient history",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "About the course / Overview; normalized subject label",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "duration": {
+      "value": {
+        "amount": 3,
+        "unit": "years"
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Course duration",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "study_mode": {
+      "value": "Full-time",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Structure > Independent self-study",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "location": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not established from the reviewed evidence."
+    },
+    "language_of_instruction": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "English admission requirements alone do not verify the language of all teaching."
+    },
+    "international_tuition": {
+      "value": {
+        "amount": 46210,
+        "currency": "GBP",
+        "period": "year",
+        "academic_year": "2027-28",
+        "fee_status": "Overseas",
+        "note": "Tuition only; excludes living costs and additional charges. Future years may increase."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Fees and funding > Course fees (2027 entry)",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Oxford labels fees as 2027 entry; academic year normalized to 2027-28. Human review pending."
+    },
+    "entry_requirements": {
+      "value": "A-level AAA; IB 39 including core, with 666 at Higher Level. No required subjects or admissions test. Two marked written pieces; shortlisted applicants are interviewed. Summary only.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "How to apply > Qualifications required, Written work, Interview",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "english_requirements": {
+      "value": "Higher level English required where applicable. Exemptions and accepted tests: consult Oxford’s English language guidance. Test scores have not been independently captured here.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "How to apply > English language requirements",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "application_url": {
+      "value": "https://www.ox.ac.uk/admissions/undergraduate/applying",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-undergraduate-applying",
+          "locator": "Applying",
+          "note": "Official undergraduate application guidance."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "source_url": {
+      "value": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/classical-archaeology-and-ancient-history",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "Canonical official course page",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    },
+    "summary": {
+      "value": "Ancient Mediterranean societies studied through archaeology, art and historical evidence.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-classical-archaeology",
+          "locator": "About the course / Overview; researcher-written summary",
+          "note": "Factual extraction; human review pending."
+        }
+      ],
+      "review_note": "Source checked; human review pending."
+    }
+  }
+}
