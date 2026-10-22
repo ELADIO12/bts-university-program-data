@@ -11,6 +11,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from jsonschema import Draft202012Validator, FormatChecker
+from . import bts
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {
@@ -50,10 +51,10 @@ def canonical_source(url):
     return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip('/'), '', ''))
 
 
-def official(url):
+def official(url, university_domain):
     parts = urlsplit(url)
-    return parts.scheme == 'https' and (parts.hostname == 'ox.ac.uk' or
-            (parts.hostname or '').endswith('.ox.ac.uk')) and not parts.username
+    return parts.scheme == 'https' and (parts.hostname == university_domain or
+            (parts.hostname or '').endswith('.' + university_domain)) and not parts.username
 
 
 def validate(records, evidence, root=ROOT):
@@ -71,6 +72,9 @@ def validate(records, evidence, root=ROOT):
         if set(fields) != set(FIELDS):
             raise ValueError(f'{rid}: unexpected or missing fields')
         values = {key: field['value'] for key, field in fields.items()}
+        domain = values['university_identity'].lower()
+        if not re.fullmatch(r'[a-z0-9-]+(?:\.[a-z0-9-]+)+', domain):
+            raise ValueError(f'{rid}: invalid institutional domain')
         identity = tuple(normalized(values[k]) for k in
                          ('university_identity', 'program_title', 'qualification'))
         source = (identity[0], canonical_source(values['source_url']))
@@ -90,19 +94,20 @@ def validate(records, evidence, root=ROOT):
                 raise ValueError(f'{rid}.{name}: evidence required')
             for item in field['evidence']:
                 src = evidence.get(item['source_id'])
-                if not src or not official(src.get('url', '')):
+                if not src or not official(src.get('url', ''), domain):
                     raise ValueError(f'{rid}.{name}: missing or non-Oxford evidence')
                 accessed = date.fromisoformat(src['accessed_on'])
                 if accessed > verification:
                     raise ValueError(f'{rid}.{name}: evidence newer than verification')
                 if verified and src['access_status'] != 'accessible':
                     raise ValueError(f'{rid}.{name}: inaccessible evidence cannot verify a fact')
-            if name in ('application_url', 'source_url') and verified and not official(field['value']):
+            if name in ('application_url', 'source_url') and verified and not official(field['value'], domain):
                 raise ValueError(f'{rid}.{name}: expected official Oxford URL')
         if not any(evidence[e['source_id']]['url'] == values['source_url']
                    for e in fields['source_url']['evidence']):
             raise ValueError(f'{rid}: original source must match its evidence URL')
         expected = 'verified' if all(f['status'] == 'verified' for f in fields.values()) else 'partial'
+        bts.validate_bts(record, evidence)
         if record['review_status'] != expected:
             raise ValueError(f'{rid}: incorrect overall review status')
     if not records:
@@ -118,7 +123,7 @@ def load(root=ROOT):
             raise ValueError(f'Invalid or duplicate evidence file: {path.name}')
         if src['access_status'] not in ('accessible', 'manual_evidence_required'):
             raise ValueError(f'Invalid evidence access status: {path.name}')
-        if not official(src['url']) or not all(isinstance(v, str) and v.strip() for v in src.values()):
+        if urlsplit(src['url']).scheme != 'https' or not urlsplit(src['url']).hostname or not all(isinstance(v, str) and v.strip() for v in src.values()):
             raise ValueError(f'Invalid evidence metadata: {path.name}')
         date.fromisoformat(src['accessed_on'])
         evidence[src['id']] = src
@@ -196,28 +201,18 @@ def page(title, body, prefix='', structured=None, canonical=None):
 
 def program_page(record, evidence, base_url):
     esc = html.escape
-    rows = []
-    for key, label in FIELDS.items():
-        field = record['fields'][key]
-        value = esc(display(confirmed(record, key)))
-        if confirmed(record, key) is not None and key in ('source_url', 'application_url'):
-            value = f'<a href="{esc(field["value"], quote=True)}">{value}</a>'
-        provenance = []
-        for item in field['evidence']:
-            src = evidence[item['source_id']]
-            provenance.append(f'<a href="{esc(src["url"], quote=True)}">{esc(src["title"])}</a> — '
-                              f'{esc(item["locator"])}. {esc(item["note"])}')
-        rows.append(f'<dt>{esc(label)}</dt><dd><p>{value}</p><small>Status: {esc(field["status"])}. '
-                    f'{esc(field["review_note"])}</small><ul>' +
-                    ''.join(f'<li>{p}</li>' for p in provenance) + '</ul></dd>')
     title = confirmed(record, 'program_title')
+    report = bts.completeness(record)
     body = (f'<h1>{esc(title)} — {esc(confirmed(record, "qualification"))}</h1>'
             f'<p>University: {esc(confirmed(record, "university_name"))}</p>'
             f'<p>Review status: <strong>{record["review_status"]}</strong>. '
             f'Verification date: <time datetime="{record["verification_date"]}">{record["verification_date"]}</time>. '
-            'Human review pending.</p><p>Requirements below are brief summaries; consult the linked sources for full conditions.</p>'
-            f'<p><a href="../data/programs/{record["id"]}.json">Download source record (JSON)</a></p>'
-            '<h2>Program facts and field provenance</h2><dl>' + ''.join(rows) + '</dl>')
+            'Human review pending.</p><p>Requirements below are brief summaries; consult linked official sources for full conditions.</p>'
+            f'<p><a href="../data/programs/{record["id"]}.json">Source record (JSON)</a> · '
+            f'<a href="../data/reports/{record["id"]}.json">Field completeness report (JSON)</a></p>'
+            f'<p>Field completeness: {report["verified_fields"]} of {report["total_fields"]} populated with official evidence. '
+            'This is not an accuracy or approval score.</p>'
+            + bts.render_bts(record, evidence))
     canonical = base_url.rstrip('/') + '/programs/' + record['id'] + '.html' if base_url else None
     return page(title, body, '../', course_jsonld(record, base_url), canonical)
 
@@ -227,6 +222,8 @@ def export_csv(records):
     columns = ['id', 'verification_date', 'review_status']
     for field in FIELDS:
         columns.extend([field, field + '_status', field + '_provenance', field + '_review_note'])
+    for field in bts.LABELS:
+        columns.extend(['bts_' + field, 'bts_' + field + '_status', 'bts_' + field + '_provenance'])
     writer = csv.DictWriter(output, columns, lineterminator='\n')
     writer.writeheader()
     for record in records:
@@ -240,6 +237,15 @@ def export_csv(records):
             row[field + '_status'] = record['fields'][field]['status']
             row[field + '_provenance'] = json.dumps(record['fields'][field]['evidence'], ensure_ascii=False)
             row[field + '_review_note'] = record['fields'][field]['review_note']
+        for field in bts.LABELS:
+            item = record['bts_fields'][field]
+            value = item['value'] if item['status'] == 'verified' else None
+            cell = '' if value is None else json.dumps(value, ensure_ascii=False) if isinstance(value, (dict, list)) else str(value)
+            if cell.lstrip().startswith(('=', '+', '-', '@')):
+                cell = "'" + cell
+            row['bts_' + field] = cell
+            row['bts_' + field + '_status'] = item['status']
+            row['bts_' + field + '_provenance'] = json.dumps(item['evidence'], ensure_ascii=False)
         writer.writerow(row)
     return output.getvalue()
 
@@ -253,7 +259,7 @@ def build(root=ROOT, base_url=''):
     out = root / 'site'
     expected = {'index.html', '.nojekyll', 'assets/style.css', 'data/programs.csv'}
     for record in records:
-        expected.update({f'programs/{record["id"]}.html', f'data/programs/{record["id"]}.json'})
+        expected.update({f'programs/{record["id"]}.html', f'data/programs/{record["id"]}.json', f'data/reports/{record["id"]}.json'})
     expected.update(f'data/evidence/{key}.json' for key in evidence)
     if out.is_symlink():
         raise ValueError('Generated site directory must not be a symlink')
@@ -270,6 +276,7 @@ def build(root=ROOT, base_url=''):
     for record in records:
         write(f'programs/{record["id"]}.html', program_page(record, evidence, base_url))
         write(f'data/programs/{record["id"]}.json', json.dumps(record, indent=2, ensure_ascii=False) + '\n')
+        write(f'data/reports/{record["id"]}.json', json.dumps(bts.completeness(record), indent=2, ensure_ascii=False) + '\n')
         links.append(f'<li><a href="programs/{record["id"]}.html">{html.escape(confirmed(record, "program_title"))}'
                      f' — {html.escape(confirmed(record, "qualification"))}</a><p>Review: {record["review_status"]}; '
                      f'checked {record["verification_date"]}</p></li>')

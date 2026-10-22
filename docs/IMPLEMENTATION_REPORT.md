@@ -6,9 +6,9 @@ Delivered 2026-10-23. Public GitHub repository: `ELADIO12/bts-university-program
 
 - Three Oxford records: the two requested BAs and the standalone Archaeological Science MSc selected from the official graduate directory.
 - Seventeen fields per record, each with value, source-check status, evidence references and review notes. Record-level verification date, pending human review and fixed research-only publication status.
-- JSON Schema plus offline semantic validation for provenance references, Oxford domain boundaries, accessible evidence, dates, filenames, duplicate IDs and duplicate course identities/source URLs.
-- Deterministic static HTML build with a directory, one URL per program, semantic headings, definition lists, metadata, Course JSON-LD, official source links and independent-research notice.
-- JSON/evidence downloads and CSV export preserving status and provenance. Source records, generated pages and future synthetic experiments are separated.
+- JSON Schema plus offline semantic validation for provenance references, institutional domain boundaries, accessible evidence, dates, filenames, duplicate IDs and duplicate course identities/source URLs.
+- Deterministic static HTML build with a directory, one stable URL per program, 13 requested semantic sections, definition lists, metadata, Course JSON-LD, official source links and independent-research notice.
+- JSON/evidence downloads, completeness reports and CSV export preserving status and provenance. Source records, generated pages and future synthetic experiments are separated.
 - GitHub Actions PR checks and `main` Pages artifact deployment, Windows setup and sandbox-only BTS test instructions.
 
 ## Checks actually run
@@ -16,10 +16,10 @@ Delivered 2026-10-23. Public GitHub repository: `ELADIO12/bts-university-program
 | Check | Result |
 | --- | --- |
 | `python -m scripts.pipeline validate` | PASS: 3 records |
-| `python -W error::ResourceWarning -m unittest discover -s tests -v` | PASS: 33 tests |
+| `python -W error::ResourceWarning -m unittest discover -s tests -v` | PASS: 48 tests |
 | `python -m scripts.pipeline build` | PASS: generated static site |
 | `python -m compileall -q scripts tests` | PASS |
-| Local HTTP responses | PASS: HTTP 200 for all 16 generated files |
+| Local HTTP responses | PASS: HTTP 200 for all 19 generated files |
 | Browser review | Directory layout inspected; individual MSc navigation and accessible content verified |
 | Git whitespace check | PASS: staged source files |
 | GitHub Actions execution / live Pages deployment | PASS: workflow run 39848415892 at commit `1579aa5`; public directory HTTP 200 |
@@ -33,7 +33,7 @@ The automated tests cover missing/unsupported values, invalid types/dates/fee ye
 
 | Criterion | Status |
 | --- | --- |
-| All tests pass | Met locally: 33/33 |
+| All tests pass | Met locally: 48/48 |
 | GitHub Pages deploys successfully | Met: live workflow and public URL verified |
 | Individual program URLs | Met: all three public URLs returned HTTP 200 |
 | Directory links all pilot records | Met and tested |
@@ -51,3 +51,7 @@ The automated tests cover missing/unsupported values, invalid types/dates/fee ye
 5. BA fee year is normalized from Oxford's 2027 entry label to 2027-28 and disclosed as such. Requirements are summaries; accepted tests, exemptions and full conditions must be checked at the official source before an operational import.
 
 See `README.md` for every source/generated file and commands, and `docs/EVIDENCE_AND_REVIEW.md` for source-specific assumptions and access policy. The generated preview has no invented owner, canonical URL or BTS approval label. The source archive includes a generated `site/` for convenience; Git ignores that directory and CI rebuilds it. The public directory, all three HTML pages, CSV and three program JSON files returned HTTP 200 on 2026-10-23.
+
+## BTS Add Program upgrade
+
+Schema version 2.0 now requires all 64 mapped BTS form fields per record. Oxford MSc completeness: 29 verified / 35 missing; each BA: 22 verified / 42 missing. All fields still await human review. The score measures sourced coverage, not accuracy. The three stable program URLs are unchanged. Annual Home/Overseas GBP tuition, fee year, distinct deadlines, duration choice and tri-state flags are visible in ordinary HTML and exported in JSON/CSV. The [field mapping](BTS_FIELD_MAPPING.md) lists every form key and the adding-a-university workflow. The BTS importer has not been contacted.

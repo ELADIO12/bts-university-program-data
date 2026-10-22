@@ -11,11 +11,12 @@
     "review_status",
     "human_review",
     "publication_status",
-    "fields"
+    "fields",
+    "bts_fields"
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0"
+      "const": "2.0"
     },
     "id": {
       "type": "string",
@@ -1284,6 +1285,1662 @@
           ]
         }
       }
+    },
+    "bts_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "program_title",
+        "degree_level",
+        "school_name",
+        "program_link",
+        "contact_university",
+        "degree_type",
+        "areas_of_study",
+        "primary_area_of_study",
+        "additional_areas_of_study",
+        "description_html",
+        "university_street",
+        "university_street_2",
+        "university_postal_code",
+        "university_city",
+        "university_region",
+        "university_country",
+        "university_latitude",
+        "university_longitude",
+        "program_street",
+        "program_street_2",
+        "program_postal_code",
+        "program_city",
+        "program_region",
+        "program_country",
+        "program_latitude",
+        "program_longitude",
+        "inherit_university_location",
+        "format",
+        "attendance",
+        "duration_original",
+        "duration_bts",
+        "tuition_home",
+        "tuition_non_eu",
+        "tuition_currency",
+        "tuition_academic_year",
+        "tuition_source_url",
+        "tuition_last_verified",
+        "tuition_billing_period",
+        "tuition_conversion",
+        "application_deadline",
+        "application_deadline_date",
+        "scholarship_deadline",
+        "final_admission_deadline",
+        "application_opening_date",
+        "expected_start_date",
+        "start_application_url",
+        "admissions_requirements",
+        "admissions_difficulty",
+        "minimum_gpa",
+        "english_proficiency_required",
+        "english_tests",
+        "entrance_exam",
+        "gmat_gre_required",
+        "sat_act_required",
+        "aps_required",
+        "numerus_fixus",
+        "pre_master",
+        "foundation_year",
+        "post_bachelor_work_experience",
+        "erasmus_mundus",
+        "american_school",
+        "franchise",
+        "spring_intake",
+        "internship_built_in"
+      ],
+      "properties": {
+        "program_title": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "degree_level": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "Bachelors",
+                        "Masters"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "school_name": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_link": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "contact_university": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "degree_type": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "areas_of_study": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "primary_area_of_study": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "additional_areas_of_study": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "description_html": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_street": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_street_2": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_postal_code": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_city": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_region": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_country": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_latitude": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": -90,
+                      "maximum": 90
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "university_longitude": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_street": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_street_2": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_postal_code": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_city": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_region": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_country": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_latitude": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": -90,
+                      "maximum": 90
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "program_longitude": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "inherit_university_location": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "format": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "Full Time",
+                        "Part Time"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "attendance": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "On Campus",
+                        "Online",
+                        "Blended Learning"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "duration_original": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "amount",
+                        "unit"
+                      ],
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "unit": {
+                          "enum": [
+                            "months",
+                            "years"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "duration_bts": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "1 year",
+                        "1.5 years",
+                        "2 years",
+                        "2.5 years",
+                        "3 years",
+                        "3.5 years",
+                        "4 years",
+                        "Less than 1 year",
+                        "Less than 2 years",
+                        "More than 4 years"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_home": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "amount",
+                        "currency",
+                        "period",
+                        "academic_year",
+                        "fee_status",
+                        "note"
+                      ],
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "currency": {
+                          "const": "GBP"
+                        },
+                        "period": {
+                          "const": "year"
+                        },
+                        "academic_year": {
+                          "type": "string",
+                          "pattern": "^[0-9]{4}-[0-9]{2}$"
+                        },
+                        "fee_status": {
+                          "enum": [
+                            "Home",
+                            "Overseas"
+                          ]
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_non_eu": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "amount",
+                        "currency",
+                        "period",
+                        "academic_year",
+                        "fee_status",
+                        "note"
+                      ],
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "currency": {
+                          "const": "GBP"
+                        },
+                        "period": {
+                          "const": "year"
+                        },
+                        "academic_year": {
+                          "type": "string",
+                          "pattern": "^[0-9]{4}-[0-9]{2}$"
+                        },
+                        "fee_status": {
+                          "enum": [
+                            "Home",
+                            "Overseas"
+                          ]
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_currency": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_academic_year": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_source_url": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_last_verified": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_billing_period": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "tuition_conversion": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "original_amount",
+                        "original_currency",
+                        "exchange_rate",
+                        "exchange_rate_date",
+                        "converted_amount",
+                        "converted_currency"
+                      ],
+                      "properties": {
+                        "original_amount": {
+                          "type": "number"
+                        },
+                        "original_currency": {
+                          "type": "string"
+                        },
+                        "exchange_rate": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "exchange_rate_date": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "converted_amount": {
+                          "type": "number"
+                        },
+                        "converted_currency": {
+                          "const": "EUR"
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "application_deadline": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "application_deadline_date": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "scholarship_deadline": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "final_admission_deadline": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "application_opening_date": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "expected_start_date": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "start_application_url": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "admissions_requirements": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "admissions_difficulty": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "Easy",
+                        "Moderate",
+                        "Competitive",
+                        "Highly Competitive"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "minimum_gpa": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "minimum",
+                        "scale",
+                        "context"
+                      ],
+                      "properties": {
+                        "minimum": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "scale": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "context": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "english_proficiency_required": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "english_tests": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "test",
+                          "overall",
+                          "components"
+                        ],
+                        "properties": {
+                          "test": {
+                            "type": "string"
+                          },
+                          "overall": {
+                            "type": "number"
+                          },
+                          "components": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "entrance_exam": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "gmat_gre_required": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "sat_act_required": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "aps_required": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "Required",
+                        "Not Required"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "numerus_fixus": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "pre_master": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "foundation_year": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "post_bachelor_work_experience": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "erasmus_mundus": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "american_school": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "franchise": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "spring_intake": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "internship_built_in": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/btsFieldBase"
+            },
+            {
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   },
   "$defs": {
@@ -1309,6 +2966,92 @@
           "minLength": 1
         }
       }
+    },
+    "btsFieldBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "status",
+        "evidence",
+        "review_note",
+        "verified_on",
+        "human_review_status",
+        "academic_year"
+      ],
+      "properties": {
+        "value": {},
+        "status": {
+          "enum": [
+            "verified",
+            "unverified",
+            "conflicting",
+            "not_published",
+            "not_applicable",
+            "manual_evidence_required"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "review_note": {
+          "type": "string"
+        },
+        "verified_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "human_review_status": {
+          "enum": [
+            "pending",
+            "reviewed"
+          ]
+        },
+        "academic_year": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }

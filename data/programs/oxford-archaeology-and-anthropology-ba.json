@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "id": "oxford-archaeology-and-anthropology-ba",
   "verification_date": "2026-10-23",
   "review_status": "partial",
@@ -201,6 +201,736 @@
         }
       ],
       "review_note": "Source checked; human review pending."
+    }
+  },
+  "bts_fields": {
+    "program_title": {
+      "value": "Archaeology and Anthropology",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "degree_level": {
+      "value": "Bachelors",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "school_name": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_link": {
+      "value": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/archaeology-and-anthropology",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "contact_university": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "degree_type": {
+      "value": "BA",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "areas_of_study": {
+      "value": [
+        "Archaeology",
+        "Anthropology"
+      ],
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "primary_area_of_study": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "additional_areas_of_study": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "description_html": {
+      "value": "<h3>Academic focus</h3><p>This BA combines archaeological evidence with anthropological approaches to human societies across time and place.</p><h3>Curriculum and teaching</h3><p>Students study archaeological methods, human evolution and social analysis through lectures, tutorials and practical classes. Fieldwork and a final dissertation form part of the course.</p><h3>Research environment</h3><p>Teaching draws on Oxford archaeology and anthropology specialists and on museum resources. Approved fieldwork may take place in field, laboratory or museum settings.</p>",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_street": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_street_2": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_postal_code": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_city": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_region": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_country": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_latitude": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "university_longitude": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_street": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_street_2": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_postal_code": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_city": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_region": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_country": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_latitude": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "program_longitude": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "inherit_university_location": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "format": {
+      "value": "Full Time",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "attendance": {
+      "value": "On Campus",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "duration_original": {
+      "value": {
+        "amount": 3,
+        "unit": "years"
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "duration_bts": {
+      "value": "3 years",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "tuition_home": {
+      "value": {
+        "amount": 10050,
+        "currency": "GBP",
+        "period": "year",
+        "academic_year": "2027-28",
+        "fee_status": "Home",
+        "note": "Annual home tuition only; excludes living costs."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_non_eu": {
+      "value": {
+        "amount": 46210,
+        "currency": "GBP",
+        "period": "year",
+        "academic_year": "2027-28",
+        "fee_status": "Overseas",
+        "note": "Tuition only; excludes living costs and additional charges. Future years may increase."
+      },
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_currency": {
+      "value": "GBP",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_academic_year": {
+      "value": "2027-28",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_source_url": {
+      "value": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/archaeology-and-anthropology",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_last_verified": {
+      "value": "2026-10-23",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_billing_period": {
+      "value": "year",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Annual course fees",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "tuition_conversion": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "application_deadline": {
+      "value": "15 October 2026 at 18:00 UK time",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Application deadline; How to apply > UCAS application",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "application_deadline_date": {
+      "value": "2026-10-15",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Application deadline",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "scholarship_deadline": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "final_admission_deadline": {
+      "value": "2026-10-15",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Application deadline",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": "2027-28"
+    },
+    "application_opening_date": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "expected_start_date": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "start_application_url": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "admissions_requirements": {
+      "value": "A-level AAA; IB 38 including core, with 666 at Higher Level. No required subjects or admissions test. Two marked essays plus a short response; shortlisted applicants are interviewed. Summary only.",
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "Official course page: Course title, overview, structure, attendance or admissions as applicable",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "admissions_difficulty": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "minimum_gpa": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "english_proficiency_required": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "english_tests": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "entrance_exam": {
+      "value": false,
+      "status": "verified",
+      "evidence": [
+        {
+          "source_id": "oxford-archaeology-anthropology",
+          "locator": "How to apply > Admissions test",
+          "note": "Factual extraction or disclosed normalization."
+        }
+      ],
+      "review_note": "Official course page checked; human review pending.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "gmat_gre_required": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "sat_act_required": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "aps_required": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "numerus_fixus": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "pre_master": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "foundation_year": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "post_bachelor_work_experience": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "erasmus_mundus": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "american_school": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "franchise": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "spring_intake": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
+    },
+    "internship_built_in": {
+      "value": null,
+      "status": "unverified",
+      "evidence": [],
+      "review_note": "Not confirmed in the reviewed official material; human review required.",
+      "verified_on": "2026-10-23",
+      "human_review_status": "pending",
+      "academic_year": null
     }
   }
 }

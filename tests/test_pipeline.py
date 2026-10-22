@@ -180,6 +180,7 @@ class BuildTests(unittest.TestCase):
         record = copy.deepcopy(self.records[0])
         malicious = '</script><script>alert("x")</script> & <b>'
         record['fields']['summary']['value'] = malicious
+        record['fields']['program_title']['value'] = malicious
         text = p.program_page(record, self.evidence, self.base)
         self.assertNotIn(malicious, text)
         self.assertIn('&lt;script&gt;', text)
@@ -209,6 +210,99 @@ class BuildTests(unittest.TestCase):
         path.write_text(json.dumps(record), encoding='utf-8')
         with self.assertRaises((ValueError, ValidationError)):
             p.build(self.root, self.base)
+
+
+class BTSFormTests(unittest.TestCase):
+    def setUp(self):
+        self.records,self.evidence=p.load()
+        self.records=copy.deepcopy(self.records)
+        self.msc=next(r for r in self.records if r['id'].endswith('-msc'))
+
+    def test_every_form_field_has_schema_and_record_value(self):
+        from scripts import bts
+        schema=p.read_json(p.ROOT/'schema/program.schema.json')
+        props=schema['properties']['bts_fields']['properties']
+        self.assertEqual(set(props),set(bts.LABELS))
+        for record in self.records:self.assertEqual(set(record['bts_fields']),set(bts.LABELS))
+
+    def test_all_checkbox_states_are_bool_or_unknown(self):
+        from scripts import bts
+        for record in self.records:
+            for key in bts.FLAGS:
+                value=record['bts_fields'][key]['value']
+                self.assertIn(value,(True,False,None))
+                if value is None:self.assertNotEqual(record['bts_fields'][key]['status'],'verified')
+
+    def test_msc_tuition_is_annual_and_year_scoped(self):
+        f=self.msc['bts_fields']
+        self.assertEqual((f['tuition_home']['value']['amount'],f['tuition_non_eu']['value']['amount']),(21870,40730))
+        self.assertEqual(f['tuition_home']['value']['period'],'year')
+        self.assertEqual(f['tuition_non_eu']['value']['academic_year'],'2027-28')
+        self.assertEqual(f['tuition_currency']['value'],'GBP')
+
+    def test_msc_deadlines_are_distinct(self):
+        f=self.msc['bts_fields']
+        self.assertEqual(f['scholarship_deadline']['value'],'2027-01-07')
+        self.assertEqual(f['final_admission_deadline']['value'],'2027-03-02')
+        self.assertEqual(f['application_deadline_date']['value'],'2027-03-02')
+        self.assertEqual(f['expected_start_date']['value'],'2027-10-10')
+
+    def test_degree_and_duration_classification(self):
+        for record in self.records:
+            f=record['bts_fields']
+            expected=('Masters','1 year') if record['id'].endswith('-msc') else ('Bachelors','3 years')
+            self.assertEqual((f['degree_level']['value'],f['duration_bts']['value']),expected)
+
+    def test_gpa_has_context_and_gre_is_false(self):
+        f=self.msc['bts_fields']
+        self.assertEqual(f['minimum_gpa']['value']['minimum'],3.6)
+        self.assertEqual(f['minimum_gpa']['value']['scale'],4.0)
+        self.assertIn('US',f['minimum_gpa']['value']['context'])
+        self.assertIs(f['gmat_gre_required']['value'],False)
+
+    def test_no_unverified_location_or_bts_categories(self):
+        for record in self.records:
+            f=record['bts_fields']
+            for key in ('university_latitude','university_longitude','primary_area_of_study','additional_areas_of_study','start_application_url'):
+                self.assertIsNone(f[key]['value'])
+
+    def test_missing_evidence_rejected(self):
+        self.msc['bts_fields']['tuition_home']['evidence']=[]
+        with self.assertRaises((ValueError,ValidationError)):p.validate(self.records,self.evidence)
+
+    def test_total_fee_cannot_replace_annual_fee(self):
+        self.msc['bts_fields']['tuition_non_eu']['value']['period']='total'
+        with self.assertRaises((ValueError,ValidationError)):p.validate(self.records,self.evidence)
+
+    def test_scholarship_deadline_cannot_be_final(self):
+        self.msc['bts_fields']['application_deadline_date']['value']='2027-01-07'
+        with self.assertRaises(ValueError):p.validate(self.records,self.evidence)
+
+    def test_unreviewed_duration_choice_rejected(self):
+        self.msc['bts_fields']['duration_bts']['value']='2 years'
+        with self.assertRaises(ValueError):p.validate(self.records,self.evidence)
+
+    def test_description_html_rejects_script(self):
+        self.msc['bts_fields']['description_html']['value']='<script>alert(1)</script>'
+        with self.assertRaises(ValueError):p.validate(self.records,self.evidence)
+
+    def test_completeness_not_accuracy(self):
+        from scripts import bts
+        report=bts.completeness(self.msc)
+        self.assertEqual(report['total_fields'],len(bts.LABELS))
+        self.assertGreater(report['missing_fields'],0)
+        self.assertIn('not accuracy',report['notice'])
+
+    def test_all_thirteen_sections_render(self):
+        from scripts import bts
+        text=p.program_page(self.msc,self.evidence,'')
+        for name in bts.SECTIONS:self.assertIn('<h2>'+name+'</h2>',text)
+        self.assertIn('<h2>Official Sources and Verification Status</h2>',text)
+
+    def test_original_course_links_remain_stable(self):
+        for record in self.records:
+            self.assertEqual(record['bts_fields']['program_link']['value'],record['fields']['source_url']['value'])
+            self.assertTrue(record['id'].startswith('oxford-'))
 
 
 if __name__ == '__main__':

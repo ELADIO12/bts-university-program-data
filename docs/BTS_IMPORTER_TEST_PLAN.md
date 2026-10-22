@@ -28,10 +28,10 @@ Run the first three tests one at a time. The combined/university-only/directory 
 
 ## Procedure and comparison
 
-1. Freeze the deployed revision and retain its source JSON and generated CSV as the expected data. Record UTC time plus local time zone.
+1. Freeze the deployed revision and retain its source JSON, generated CSV and per-program completeness report as the expected data. Treat completeness as coverage, not accuracy. Record UTC time plus local time zone.
 2. Submit one program URL and the selected mode in the isolated interface. Record any preview or error and elapsed time. Do not inspect or bypass importer internals.
-3. Compare every extracted field with the record. Check title/qualification, level, duration units, study mode, Oxford identity, original source URL, annual GBP Overseas fees **and academic year**. Distinguish the independent input URL from Oxford's original source URL.
-4. Confirm null language, unknown BTS slug and unknown BA location are not inferred as verified facts. Check whether review status, verification date and provenance survive; log omissions separately from incorrect facts. Check that independent-research notices are not ingested as course content.
+3. Compare every extracted field with the record. Check title/qualification, Bachelors/Masters level, school, areas of study, published duration versus BTS dropdown choice, study format and attendance, Oxford identity, original source URL, annual GBP Home and Overseas fees **and academic year**. Check distinct scholarship and final admission deadlines, expected start, GPA context, English tests, entrance-exam and GMAT/GRE flags where verified. Distinguish the independent input URL from Oxford's original source URL.
+4. Confirm null language, unknown BTS slug, unknown BTS taxonomy categories, unknown coordinates and unknown BA location are not inferred as verified facts. Unverified form flags must remain unknown rather than defaulting to No. Check whether review status, verification date and provenance survive; log omissions separately from incorrect facts. Check that independent-research notices are not ingested as course content.
 5. Inspect whether the importer relied on labeled HTML, JSON-LD, linked JSON or unspecified behavior. If the interface does not reveal this, record **unknown**; successful extraction does not prove a particular mechanism.
 6. Repeat for the other two records, then the repeat-URL test. If errors occur, retain the sanitized error and stop when further attempts would violate rate limits or safety boundaries.
 7. Review outputs with the BTS owner. Leave all production records unchanged. Clean up only disposable sandbox records through its authorized owner.
@@ -68,3 +68,5 @@ Follow-up owner and action:
 ```
 
 Keep any future synthetic fixtures and sanitized test results in `experiments/`, never `data/programs/`. Never put tokens, session cookies, personal data or raw private importer screenshots in the public repository.
+
+The expanded page displays every BTS Add Program field in labeled HTML sections. If an importer extracts only JSON-LD and omits fields visible in HTML, record that observation; do not change a verified value merely to satisfy extraction. Never confirm an import in the production-connected interface during this pilot.
