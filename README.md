@@ -2,7 +2,7 @@
 
 A Python 3.12 static publishing pilot for **bts-university-program-data**. It turns reviewed Oxford facts into JSON, individual HTML pages, a public directory and CSV. It has no backend, credentials, BTS connector or network-fetching code. No BTS production system was accessed or changed.
 
-**Status:** three records researched on 23 October 2026; all are partial, human review pending, research-only and not approved for BTS publication. Importer compatibility and live Pages deployment remain untested.
+**Status:** three records researched on 23 October 2026; all are partial, human review pending, research-only and not approved for BTS publication. GitHub Pages deployment passed; importer compatibility remains untested.
 
 ## Windows setup and checks
 
@@ -83,21 +83,11 @@ Schema.org `Course` includes only confirmed facts. Annual Overseas fees stay in 
 
 ## GitHub Pages deployment
 
-This delivery is a local Git repository ready for review; no existing remote, GitHub owner or authentication was supplied. To use a new empty GitHub repository named `bts-university-program-data`, review and commit the files, then connect that repository:
-
-```powershell
-git add .
-git diff --cached --check
-git commit -m "Add Oxford program research and static publishing pilot"
-git remote add origin https://github.com/OWNER/bts-university-program-data.git
-git push -u origin main
-```
-
-If a repository already exists, apply these files on a feature branch in that checkout and open a pull request; do not replace its history. No remote repository was discovered or modified during this delivery.
+The source is published in [ELADIO12/bts-university-program-data](https://github.com/ELADIO12/bts-university-program-data) on `main`. GitHub Pages uses the workflow in `.github/workflows/pages.yml` and serves the [public directory](https://eladio12.github.io/bts-university-program-data/). A dedicated GitHub noreply commit address is configured for this local checkout. Future updates should be reviewed in a branch and pull request before merging to `main`.
 
 In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. Ensure Actions and the `github-pages` environment permit deployment from `main`. Rerun the workflow after enabling Pages if needed. Pull requests run validation/tests/build but cannot deploy. Pushes to `main`, or manual dispatch on `main`, build the same artifact and deploy it with `pages: write` and `id-token: write` limited to the deployment job. GitHub's configure-pages action supplies the actual base URL, including repository path/custom domain. See [GitHub's custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
-A successful local build is not proof of deployment. Confirm the deploy job is green, open the emitted URL without authentication, and verify the directory, three HTML URLs, CSV and JSON responses before testing the importer. A repository administrator must enable Pages and supply the GitHub remote.
+The Pages workflow completed successfully and the public directory, three HTML pages, CSV and record JSON URLs returned HTTP 200 on 23 October 2026. Recheck the deployed revision after future changes. Importer compatibility still requires the isolated sandbox described below.
 
 ## BTS compatibility test
 

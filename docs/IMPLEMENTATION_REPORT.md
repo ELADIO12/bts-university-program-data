@@ -1,6 +1,6 @@
 # Implementation and verification report
 
-Delivered 2026-10-23. New local repository: `bts-university-program-data`, initial branch `main`. Source changes are ready for an initial commit or transfer to a feature branch. No remote was supplied, no pull request was created, and no remote or production system was changed.
+Delivered 2026-10-23. Public GitHub repository: `ELADIO12/bts-university-program-data`, branch `main`. The source was committed and pushed; GitHub Pages is enabled from the Actions workflow. No BTS production system was accessed or changed.
 
 ## Completed
 
@@ -22,7 +22,7 @@ Delivered 2026-10-23. New local repository: `bts-university-program-data`, initi
 | Local HTTP responses | PASS: HTTP 200 for all 16 generated files |
 | Browser review | Directory layout inspected; individual MSc navigation and accessible content verified |
 | Git whitespace check | PASS: staged source files |
-| GitHub Actions execution / live Pages deployment | NOT RUN: remote/account and Pages configuration unavailable |
+| GitHub Actions execution / live Pages deployment | PASS: workflow run 39848415892 at commit `1579aa5`; public directory HTTP 200 |
 | BTS importer execution | NOT RUN: isolated importer unavailable |
 
 Checks used bundled Python 3.12 with `jsonschema` 4.23.0 installed into workspace-only tooling. The system `python` command resolves to an unavailable Windows Store alias; the README gives normal `py -3.12` virtual environment instructions. No dependency binaries or virtual environments are included in the repository. No external source fetch happens during any test/build.
@@ -34,8 +34,8 @@ The automated tests cover missing/unsupported values, invalid types/dates/fee ye
 | Criterion | Status |
 | --- | --- |
 | All tests pass | Met locally: 33/33 |
-| GitHub Pages deploys successfully | Deployment workflow supplied; live verification blocked on GitHub setup |
-| Individual program URLs | Met in generated site/local HTTP; public URLs require deployment |
+| GitHub Pages deploys successfully | Met: live workflow and public URL verified |
+| Individual program URLs | Met: all three public URLs returned HTTP 200 |
 | Directory links all pilot records | Met and tested |
 | Pages identify source and verification status | Met and tested; browser checked on MSc |
 | Unsupported fields not shown as confirmed facts | Met: null/status handling; omitted from JSON-LD |
@@ -44,10 +44,10 @@ The automated tests cover missing/unsupported values, invalid types/dates/fee ye
 
 ## Remaining review and external blockers
 
-1. Supply the real GitHub remote/owner, review the source, commit/push or open a PR in the existing repository, enable Pages with GitHub Actions, and confirm a successful deploy job/public URLs. Local checks cannot verify account policies or environment protection rules.
+1. Continue human review in a pull request for future updates. The initial pilot is already deployed; a future change should be checked against its own successful Pages run.
 2. Supply an isolated BTS sandbox/dry-run importer and a confirmed BTS university slug. Execute the documented matrix; never fall back to a production-connected importer. Compatibility remains unknown.
 3. Human review is pending for every source extraction. The BTS slug and all instruction-language fields remain null; BA location is also null. The pipeline does not claim these records are complete or approved.
 4. The MSc application guidance page was accessible; one fetch of its linked eVision login returned a research-tool cache miss. Its usability requires manual evidence collection; no authentication/retry/workaround was attempted. The published application field is explicitly a guidance URL.
 5. BA fee year is normalized from Oxford's 2027 entry label to 2027-28 and disclosed as such. Requirements are summaries; accepted tests, exemptions and full conditions must be checked at the official source before an operational import.
 
-See `README.md` for every source/generated file and commands, and `docs/EVIDENCE_AND_REVIEW.md` for source-specific assumptions and access policy. The generated preview has no invented owner, canonical URL or BTS approval label. The source archive includes a generated `site/` for convenience; Git ignores that directory and CI rebuilds it.
+See `README.md` for every source/generated file and commands, and `docs/EVIDENCE_AND_REVIEW.md` for source-specific assumptions and access policy. The generated preview has no invented owner, canonical URL or BTS approval label. The source archive includes a generated `site/` for convenience; Git ignores that directory and CI rebuilds it. The public directory, all three HTML pages, CSV and three program JSON files returned HTTP 200 on 2026-10-23.
