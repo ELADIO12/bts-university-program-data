@@ -7,7 +7,7 @@ import io
 import json
 import re
 import unicodedata
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from jsonschema import Draft202012Validator, FormatChecker
@@ -79,7 +79,8 @@ def validate(records, evidence, root=ROOT):
         identities.add(identity)
         sources.add(source)
         verification = date.fromisoformat(record['verification_date'])
-        if verification > date.today():
+        # Verification dates are recorded in the project's Asia/Manila time zone.
+        if verification > datetime.now(timezone(timedelta(hours=8))).date():
             raise ValueError(f'{rid}: future verification date')
         for name, field in fields.items():
             verified = field['status'] == 'verified'
