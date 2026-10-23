@@ -1,8 +1,26 @@
-# BTS university program data — Oxford pilot
+# BTS university program data — Oxford pilot and Cambridge research
 
 A Python 3.12 static publishing pilot for **bts-university-program-data**. It turns reviewed Oxford facts into JSON, individual HTML pages, per-program completeness reports, a public directory and CSV. It has no backend, credentials, BTS connector or network-fetching code. No BTS production system was accessed or changed.
 
-**Status:** three records researched on 23 October 2026; all are partial, human review pending, research-only and not approved for BTS publication. GitHub Pages deployment passed; importer compatibility remains untested.
+**Status:** the three Oxford pilot records remain partial and human-review pending. A separate Cambridge undergraduate collection contains 32 workbook-derived research records. None of the Cambridge records is import-ready: compulsory teaching language is unverified for all 32 and the identities of three existing Cambridge BTS programs were not provided. No record is approved for BTS publication.
+
+## Cambridge undergraduate workbook collection
+
+The [Cambridge research directory](https://eladio12.github.io/bts-university-program-data/programs/cambridge/undergraduate/) links to 32 individual research pages. The separate [BTS import-ready directory](https://eladio12.github.io/bts-university-program-data/programs/cambridge/undergraduate/import-ready/) is intentionally empty. Do not submit the research directory to the production-connected BTS importer.
+
+The source workbook has three tabs: 32 course rows, a READ ME, and 2027 tuition bands. `data/cambridge/undergraduate/raw-workbook.json` preserves the supplied cell values and workbook SHA-256. `data/cambridge/undergraduate/programs/*.json` contains one mapped 64-field research record per row. `cambridge-undergraduate.json`, `cambridge-undergraduate.csv`, `discovery-manifest.json`, `excluded-programs.json`, and `validation-report.json` provide aggregate data and checks. The build copies these into the public site and produces three Cambridge reports under `site/reports/cambridge/`.
+
+Workbook values are labelled `workbook_reported`, never `verified`. Three rows contain direct Cambridge course links; the other 29 use the Cambridge course directory as a research source. One graduate-entry Medicine row lacks an overseas fee and is explicitly excluded by the workbook; the other 31 are on hold. The workbook describes 2027-entry annual amounts but does not explicitly give an academic-year label, so that label remains null. Cambridge's official pages returned HTTP 403 during this research pass; no restriction was bypassed and official field verification requires permitted manual evidence.
+
+To repeat workbook intake on Windows, install the dependencies above, then run:
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.cambridge ingest --workbook "C:\path\to\Cambridge_Undergraduate_BTS_Fields_2027_Research.xlsx"
+.\.venv\Scripts\python.exe -m scripts.cambridge validate
+.\.venv\Scripts\python.exe -m scripts.pipeline build --base-url https://eladio12.github.io/bts-university-program-data
+```
+
+Intake regenerates the Cambridge source JSON, CSV, manifest, and reports from the specified workbook. Review any locally curated changes before rerunning it. See [Cambridge research status](docs/CAMBRIDGE_RESEARCH.md) for the review queue and eligibility rules. The Cambridge intake has no BTS connection.
 
 ## Windows setup and checks
 

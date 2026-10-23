@@ -1,0 +1,174 @@
+{
+  "research_directory": "programs/cambridge/undergraduate/",
+  "import_ready_directory": "programs/cambridge/undergraduate/import-ready/",
+  "workbook_sha256": "d9b1e732ddb36b1a13d846ef00c0f7e194e77b3d8ed1be93454ba6eae96e88d4",
+  "collection_official_sources": [
+    "https://www.undergraduate.study.cam.ac.uk/courses/a-z",
+    "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+    "https://www.undergraduate.study.cam.ac.uk/fees-funding/tuition-fees",
+    "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines",
+    "https://www.undergraduate.study.cam.ac.uk/international-students/international-entry-requirements"
+  ],
+  "programs": [
+    {
+      "id": "cambridge-anglo-saxon-norse-and-celtic-ba-hons",
+      "title": "Anglo-Saxon, Norse, and Celtic",
+      "path": "programs/cambridge/undergraduate/anglo-saxon-norse-and-celtic-ba-hons.html"
+    },
+    {
+      "id": "cambridge-archaeology-ba-hons",
+      "title": "Archaeology",
+      "path": "programs/cambridge/undergraduate/archaeology-ba-hons.html"
+    },
+    {
+      "id": "cambridge-architecture-ba-hons",
+      "title": "Architecture",
+      "path": "programs/cambridge/undergraduate/architecture-ba-hons.html"
+    },
+    {
+      "id": "cambridge-asian-and-middle-eastern-studies-ba-hons",
+      "title": "Asian and Middle Eastern Studies",
+      "path": "programs/cambridge/undergraduate/asian-and-middle-eastern-studies-ba-hons.html"
+    },
+    {
+      "id": "cambridge-chemical-engineering-and-biotechnology-ba-hons",
+      "title": "Chemical Engineering and Biotechnology",
+      "path": "programs/cambridge/undergraduate/chemical-engineering-and-biotechnology-ba-hons.html"
+    },
+    {
+      "id": "cambridge-classics-ba-hons",
+      "title": "Classics",
+      "path": "programs/cambridge/undergraduate/classics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-computer-science-ba-hons",
+      "title": "Computer Science",
+      "path": "programs/cambridge/undergraduate/computer-science-ba-hons.html"
+    },
+    {
+      "id": "cambridge-design-ba-hons",
+      "title": "Design",
+      "path": "programs/cambridge/undergraduate/design-ba-hons.html"
+    },
+    {
+      "id": "cambridge-economics-ba-hons",
+      "title": "Economics",
+      "path": "programs/cambridge/undergraduate/economics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-education-ba-hons",
+      "title": "Education",
+      "path": "programs/cambridge/undergraduate/education-ba-hons.html"
+    },
+    {
+      "id": "cambridge-engineering-ba-hons",
+      "title": "Engineering",
+      "path": "programs/cambridge/undergraduate/engineering-ba-hons.html"
+    },
+    {
+      "id": "cambridge-english-ba-hons",
+      "title": "English",
+      "path": "programs/cambridge/undergraduate/english-ba-hons.html"
+    },
+    {
+      "id": "cambridge-environment-law-and-economics-ba-hons",
+      "title": "Environment, Law, and Economics",
+      "path": "programs/cambridge/undergraduate/environment-law-and-economics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-geography-ba-hons",
+      "title": "Geography",
+      "path": "programs/cambridge/undergraduate/geography-ba-hons.html"
+    },
+    {
+      "id": "cambridge-history-ba-hons",
+      "title": "History",
+      "path": "programs/cambridge/undergraduate/history-ba-hons.html"
+    },
+    {
+      "id": "cambridge-history-and-modern-languages-ba-hons",
+      "title": "History and Modern Languages",
+      "path": "programs/cambridge/undergraduate/history-and-modern-languages-ba-hons.html"
+    },
+    {
+      "id": "cambridge-history-and-politics-ba-hons",
+      "title": "History and Politics",
+      "path": "programs/cambridge/undergraduate/history-and-politics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-history-of-art-ba-hons",
+      "title": "History of Art",
+      "path": "programs/cambridge/undergraduate/history-of-art-ba-hons.html"
+    },
+    {
+      "id": "cambridge-human-social-and-political-sciences-ba-hons",
+      "title": "Human, Social, and Political Sciences",
+      "path": "programs/cambridge/undergraduate/human-social-and-political-sciences-ba-hons.html"
+    },
+    {
+      "id": "cambridge-law-ba-hons",
+      "title": "Law",
+      "path": "programs/cambridge/undergraduate/law-ba-hons.html"
+    },
+    {
+      "id": "cambridge-linguistics-ba-hons",
+      "title": "Linguistics",
+      "path": "programs/cambridge/undergraduate/linguistics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-linguistics-and-modern-languages-ba-hons",
+      "title": "Linguistics and Modern Languages",
+      "path": "programs/cambridge/undergraduate/linguistics-and-modern-languages-ba-hons.html"
+    },
+    {
+      "id": "cambridge-mathematics-ba-hons",
+      "title": "Mathematics",
+      "path": "programs/cambridge/undergraduate/mathematics-ba-hons.html"
+    },
+    {
+      "id": "cambridge-medicine-mb-bchir",
+      "title": "Medicine",
+      "path": "programs/cambridge/undergraduate/medicine-mb-bchir.html"
+    },
+    {
+      "id": "cambridge-medicine-graduate-course-mb-bchir",
+      "title": "Medicine (Graduate course)",
+      "path": "programs/cambridge/undergraduate/medicine-graduate-course-mb-bchir.html"
+    },
+    {
+      "id": "cambridge-modern-and-medieval-languages-ba-hons",
+      "title": "Modern and Medieval Languages",
+      "path": "programs/cambridge/undergraduate/modern-and-medieval-languages-ba-hons.html"
+    },
+    {
+      "id": "cambridge-music-ba-hons",
+      "title": "Music",
+      "path": "programs/cambridge/undergraduate/music-ba-hons.html"
+    },
+    {
+      "id": "cambridge-natural-sciences-ba-hons",
+      "title": "Natural Sciences",
+      "path": "programs/cambridge/undergraduate/natural-sciences-ba-hons.html"
+    },
+    {
+      "id": "cambridge-philosophy-ba-hons",
+      "title": "Philosophy",
+      "path": "programs/cambridge/undergraduate/philosophy-ba-hons.html"
+    },
+    {
+      "id": "cambridge-psychological-and-behavioural-sciences-ba-hons",
+      "title": "Psychological and Behavioural Sciences",
+      "path": "programs/cambridge/undergraduate/psychological-and-behavioural-sciences-ba-hons.html"
+    },
+    {
+      "id": "cambridge-theology-religion-and-philosophy-of-religion-ba-hons",
+      "title": "Theology, Religion, and Philosophy of Religion",
+      "path": "programs/cambridge/undergraduate/theology-religion-and-philosophy-of-religion-ba-hons.html"
+    },
+    {
+      "id": "cambridge-veterinary-medicine-vetmb",
+      "title": "Veterinary Medicine",
+      "path": "programs/cambridge/undergraduate/veterinary-medicine-vetmb.html"
+    }
+  ]
+}

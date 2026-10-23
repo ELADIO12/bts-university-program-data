@@ -1,0 +1,291 @@
+[
+  {
+    "id": "cambridge-anglo-saxon-norse-and-celtic-ba-hons",
+    "title": "Anglo-Saxon, Norse, and Celtic",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-archaeology-ba-hons",
+    "title": "Archaeology",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-architecture-ba-hons",
+    "title": "Architecture",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-asian-and-middle-eastern-studies-ba-hons",
+    "title": "Asian and Middle Eastern Studies",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-chemical-engineering-and-biotechnology-ba-hons",
+    "title": "Chemical Engineering and Biotechnology",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-classics-ba-hons",
+    "title": "Classics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-computer-science-ba-hons",
+    "title": "Computer Science",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-design-ba-hons",
+    "title": "Design",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-economics-ba-hons",
+    "title": "Economics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-education-ba-hons",
+    "title": "Education",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-engineering-ba-hons",
+    "title": "Engineering",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-english-ba-hons",
+    "title": "English",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-environment-law-and-economics-ba-hons",
+    "title": "Environment, Law, and Economics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-geography-ba-hons",
+    "title": "Geography",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-history-ba-hons",
+    "title": "History",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-history-and-modern-languages-ba-hons",
+    "title": "History and Modern Languages",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-history-and-politics-ba-hons",
+    "title": "History and Politics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-history-of-art-ba-hons",
+    "title": "History of Art",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-human-social-and-political-sciences-ba-hons",
+    "title": "Human, Social, and Political Sciences",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-law-ba-hons",
+    "title": "Law",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-linguistics-ba-hons",
+    "title": "Linguistics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-linguistics-and-modern-languages-ba-hons",
+    "title": "Linguistics and Modern Languages",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-mathematics-ba-hons",
+    "title": "Mathematics",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-medicine-mb-bchir",
+    "title": "Medicine",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-medicine-graduate-course-mb-bchir",
+    "title": "Medicine (Graduate course)",
+    "status": "workbook_excluded",
+    "reasons": [
+      "workbook explicitly excludes this course",
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-modern-and-medieval-languages-ba-hons",
+    "title": "Modern and Medieval Languages",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-music-ba-hons",
+    "title": "Music",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-natural-sciences-ba-hons",
+    "title": "Natural Sciences",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-philosophy-ba-hons",
+    "title": "Philosophy",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-psychological-and-behavioural-sciences-ba-hons",
+    "title": "Psychological and Behavioural Sciences",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-theology-religion-and-philosophy-of-religion-ba-hons",
+    "title": "Theology, Religion, and Philosophy of Religion",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  },
+  {
+    "id": "cambridge-veterinary-medicine-vetmb",
+    "title": "Veterinary Medicine",
+    "status": "hold",
+    "reasons": [
+      "language not certified 100% English",
+      "existing BTS match not established"
+    ]
+  }
+]

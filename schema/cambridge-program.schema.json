@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bts:cambridge-undergraduate-research:1",
+  "title": "Cambridge undergraduate workbook research record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "id", "university", "source_workbook", "program",
+    "bts_fields", "official_sources", "language_classification",
+    "existing_bts_match", "workbook_import_status", "import_eligibility", "human_review_status",
+    "review_flags"
+  ],
+  "properties": {
+    "schema_version": {"const": "cambridge-research-1.0"},
+    "id": {"type": "string", "pattern": "^cambridge-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "university": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "identity_domain", "bts_university_id", "id_provenance"],
+      "properties": {
+        "name": {"const": "University of Cambridge"},
+        "identity_domain": {"const": "cam.ac.uk"},
+        "bts_university_id": {"const": 92862},
+        "id_provenance": {"const": "user-provided; not checked against BTS"}
+      }
+    },
+    "source_workbook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["filename", "sha256", "sheet", "row"],
+      "properties": {
+        "filename": {"const": "Cambridge_Undergraduate_BTS_Fields_2027_Research.xlsx"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "sheet": {"const": "BTS Fields - 32 Courses"},
+        "row": {"type": "integer", "minimum": 2, "maximum": 33}
+      }
+    },
+    "program": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "qualification", "direct_program_url", "research_source_url"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "qualification": {"type": "string", "minLength": 1},
+        "direct_program_url": {"type": ["string", "null"], "format": "uri"},
+        "research_source_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "bts_fields": {
+      "type": "object",
+      "minProperties": 64,
+      "maxProperties": 64,
+      "additionalProperties": {"$ref": "#/$defs/field"}
+    },
+    "official_sources": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uri"}
+    },
+    "language_classification": {
+      "enum": ["VERIFIED_100_PERCENT_ENGLISH", "PARTIALLY_ENGLISH", "NON_ENGLISH", "UNVERIFIED_LANGUAGE"]
+    },
+    "existing_bts_match": {"enum": ["unknown", "confirmed_existing", "confirmed_new"]},
+    "workbook_import_status": {"type": "string", "minLength": 1},
+    "import_eligibility": {"enum": ["hold", "eligible_after_human_review"]},
+    "human_review_status": {"enum": ["pending", "reviewed"]},
+    "review_flags": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "status", "source_cell", "review_note"],
+      "properties": {
+        "value": {},
+        "status": {"enum": ["workbook_reported", "unverified", "verified"]},
+        "source_cell": {"type": ["string", "null"], "pattern": "^[A-Z]+(?:[2-9]|[1-9][0-9]+)$"},
+        "review_note": {"type": "string"}
+      }
+    }
+  }
+}

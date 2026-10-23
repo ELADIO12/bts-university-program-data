@@ -11,7 +11,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 from jsonschema import Draft202012Validator, FormatChecker
-from . import bts
+from . import bts, cambridge
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {
@@ -256,11 +256,15 @@ def build(root=ROOT, base_url=''):
         if parts.scheme != 'https' or not parts.hostname or parts.query or parts.fragment or parts.username:
             raise ValueError('Base URL must be an HTTPS site URL, optionally with repository path')
     records, evidence = load(root)
+    cambridge_records, _ = cambridge.load(root)
+    if cambridge_records:
+        cambridge.validate(root)
     out = root / 'site'
     expected = {'index.html', '.nojekyll', 'assets/style.css', 'data/programs.csv'}
     for record in records:
         expected.update({f'programs/{record["id"]}.html', f'data/programs/{record["id"]}.json', f'data/reports/{record["id"]}.json'})
     expected.update(f'data/evidence/{key}.json' for key in evidence)
+    expected.update(cambridge.site_files(cambridge_records))
     if out.is_symlink():
         raise ValueError('Generated site directory must not be a symlink')
     for path in out.rglob('*') if out.exists() else []:
@@ -291,6 +295,8 @@ def build(root=ROOT, base_url=''):
     write('data/programs.csv', export_csv(records))
     write('assets/style.css', (root / 'templates/style.css').read_text(encoding='utf-8'))
     write('.nojekyll', '')
+    if cambridge_records:
+        cambridge.build(root, out, base_url)
     return out
 
 
@@ -301,7 +307,8 @@ def main():
     args = parser.parse_args()
     if args.command == 'validate':
         records, _ = load()
-        print(f'Validated {len(records)} records, provenance and duplicate checks passed.')
+        cambridge_report = cambridge.validate()
+        print(f'Validated {len(records)} Oxford records; {cambridge_report.get("record_count", 0)} Cambridge research records.')
     else:
         print(f'Built {build(base_url=args.base_url)}')
 

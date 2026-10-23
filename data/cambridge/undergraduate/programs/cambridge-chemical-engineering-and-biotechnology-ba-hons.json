@@ -1,0 +1,446 @@
+{
+  "schema_version": "cambridge-research-1.0",
+  "id": "cambridge-chemical-engineering-and-biotechnology-ba-hons",
+  "university": {
+    "name": "University of Cambridge",
+    "identity_domain": "cam.ac.uk",
+    "bts_university_id": 92862,
+    "id_provenance": "user-provided; not checked against BTS"
+  },
+  "source_workbook": {
+    "filename": "Cambridge_Undergraduate_BTS_Fields_2027_Research.xlsx",
+    "sha256": "d9b1e732ddb36b1a13d846ef00c0f7e194e77b3d8ed1be93454ba6eae96e88d4",
+    "sheet": "BTS Fields - 32 Courses",
+    "row": 6
+  },
+  "program": {
+    "title": "Chemical Engineering and Biotechnology",
+    "qualification": "BA (Hons)",
+    "direct_program_url": null,
+    "research_source_url": "https://www.undergraduate.study.cam.ac.uk/courses/a-z"
+  },
+  "bts_fields": {
+    "program_title": {
+      "value": "Chemical Engineering and Biotechnology",
+      "status": "workbook_reported",
+      "source_cell": "A6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "degree_level": {
+      "value": "Bachelors",
+      "status": "workbook_reported",
+      "source_cell": "B6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "school_name": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook names the university, not a program school or faculty."
+    },
+    "program_link": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "contact_university": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "degree_type": {
+      "value": "BA (Hons)",
+      "status": "workbook_reported",
+      "source_cell": "F6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "areas_of_study": {
+      "value": "Chemical Engineering",
+      "status": "workbook_reported",
+      "source_cell": "G6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "primary_area_of_study": {
+      "value": "Chemical Engineering",
+      "status": "workbook_reported",
+      "source_cell": "H6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "additional_areas_of_study": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "description_html": {
+      "value": "<p>The University of Cambridge Chemical Engineering and Biotechnology course covers chemical process engineering, biotechnology and design. Course-specific modules, teaching arrangements, and admissions requirements must be checked against the official Cambridge course page before publishing.</p>",
+      "status": "workbook_reported",
+      "source_cell": "J6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "university_street": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "university_street_2": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "university_postal_code": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "university_city": {
+      "value": "Cambridge",
+      "status": "workbook_reported",
+      "source_cell": "N6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "university_region": {
+      "value": "Cambridgeshire",
+      "status": "workbook_reported",
+      "source_cell": "O6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "university_country": {
+      "value": "United Kingdom",
+      "status": "workbook_reported",
+      "source_cell": "P6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "university_latitude": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "university_longitude": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_street": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_street_2": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_postal_code": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_city": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_region": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_country": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_latitude": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "program_longitude": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "inherit_university_location": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "format": {
+      "value": "Full Time",
+      "status": "workbook_reported",
+      "source_cell": "S6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "attendance": {
+      "value": "On Campus",
+      "status": "workbook_reported",
+      "source_cell": "U6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "duration_original": {
+      "value": {
+        "amount": 4,
+        "unit": "years"
+      },
+      "status": "workbook_reported",
+      "source_cell": "Y6",
+      "review_note": "Workbook route duration; integrated-degree and professional routes require individual course review."
+    },
+    "duration_bts": {
+      "value": "4 years",
+      "status": "workbook_reported",
+      "source_cell": "X6",
+      "review_note": "Normalized from workbook duration; course route requires review."
+    },
+    "tuition_home": {
+      "value": {
+        "amount": 10050,
+        "currency": "GBP",
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null,
+        "fee_status": "Home",
+        "note": "Workbook amount only; annual University tuition. College fees excluded. Official 2027 source could not be accessed for independent verification."
+      },
+      "status": "workbook_reported",
+      "source_cell": "Z6",
+      "review_note": "2027 entry is stated in the workbook; exact academic-year label requires source review."
+    },
+    "tuition_non_eu": {
+      "value": {
+        "amount": 46872,
+        "currency": "GBP",
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null,
+        "fee_status": "Overseas",
+        "note": "Workbook amount only; annual University tuition. College fees excluded. Official 2027 source could not be accessed for independent verification."
+      },
+      "status": "workbook_reported",
+      "source_cell": "AA6",
+      "review_note": "2027 entry is stated in the workbook; exact academic-year label requires source review."
+    },
+    "tuition_currency": {
+      "value": "GBP",
+      "status": "workbook_reported",
+      "source_cell": "AA6",
+      "review_note": "Currency is specified in workbook column heading."
+    },
+    "tuition_academic_year": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook states 2027 entry, but does not explicitly state an academic-year label."
+    },
+    "tuition_source_url": {
+      "value": "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+      "status": "workbook_reported",
+      "source_cell": "AZ6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "tuition_last_verified": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No independent official-source verification date."
+    },
+    "tuition_billing_period": {
+      "value": "year",
+      "status": "workbook_reported",
+      "source_cell": "AA6",
+      "review_note": "Annual basis is specified in workbook column heading."
+    },
+    "tuition_conversion": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "application_deadline": {
+      "value": "15 October 2026 (2027 entry)",
+      "status": "workbook_reported",
+      "source_cell": "AB6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "application_deadline_date": {
+      "value": "2026-10-15",
+      "status": "workbook_reported",
+      "source_cell": "AC6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "scholarship_deadline": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "final_admission_deadline": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "application_opening_date": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "expected_start_date": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "start_application_url": {
+      "value": "https://www.ucas.com/",
+      "status": "workbook_reported",
+      "source_cell": "AD6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "admissions_requirements": {
+      "value": "Apply through UCAS; Cambridge Colleges assess academic qualifications and may interview. Check the individual course for subject prerequisites, required tests, submitted work, and country-specific requirements. English proficiency applies as specified by Cambridge.",
+      "status": "workbook_reported",
+      "source_cell": "AE6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "admissions_difficulty": {
+      "value": "Highly Competitive",
+      "status": "workbook_reported",
+      "source_cell": "AF6",
+      "review_note": "Reported by supplied workbook; independent official-source review pending."
+    },
+    "minimum_gpa": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "english_proficiency_required": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Conditional workbook text does not establish a yes/no course-specific requirement."
+    },
+    "english_tests": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "entrance_exam": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "gmat_gre_required": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "sat_act_required": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "aps_required": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "No supported workbook value."
+    },
+    "numerus_fixus": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "pre_master": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "foundation_year": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "post_bachelor_work_experience": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "erasmus_mundus": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "american_school": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "franchise": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "spring_intake": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    },
+    "internship_built_in": {
+      "value": null,
+      "status": "unverified",
+      "source_cell": null,
+      "review_note": "Workbook assertion only; no official course-specific check."
+    }
+  },
+  "official_sources": [
+    "https://www.undergraduate.study.cam.ac.uk/courses/a-z",
+    "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+    "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines"
+  ],
+  "language_classification": "UNVERIFIED_LANGUAGE",
+  "existing_bts_match": "unknown",
+  "workbook_import_status": "HOLD — not certified 100% English",
+  "import_eligibility": "hold",
+  "human_review_status": "pending",
+  "review_flags": [
+    "Compulsory teaching language is not independently verified.",
+    "Three existing Cambridge BTS program identities were not supplied; duplicate check pending.",
+    "Official Cambridge pages returned HTTP 403 in this research session; manual source evidence is required.",
+    "No verified direct course link in the workbook.",
+    "Four-year BA or integrated degree route needs course-specific qualification review.",
+    "Workbook standard 2027-entry deadline is 15 October 2026; check exceptions and any later intake.",
+    "Check 3-year BA exit versus four-year MEng. | No program-specific official direct link verified yet."
+  ]
+}
