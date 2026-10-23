@@ -5,6 +5,7 @@ The supplied 2027-entry workbook contains 32 undergraduate course listings in a 
 ## What was published
 
 - A separate [Cambridge research directory](https://eladio12.github.io/bts-university-program-data/programs/cambridge/undergraduate/) with 32 individual pages, one per workbook row.
+- A [single-page extraction test](https://eladio12.github.io/bts-university-program-data/programs/cambridge/undergraduate/all-programs.html) containing all 32 records inline. It has no hyperlinks to program pages or external assets. It is for manually testing URL-based parsing through the review stage only; no import may be confirmed from its unverified records.
 - A separate [Cambridge import-ready directory](https://eladio12.github.io/bts-university-program-data/programs/cambridge/undergraduate/import-ready/) with zero program links.
 - One mapped JSON record per course, an exact cell-value raw workbook snapshot, aggregate JSON/CSV, a discovery manifest, excluded-program inventory, validation report, and source/duplicate/verification reports.
 

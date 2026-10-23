@@ -1,6 +1,7 @@
 {
   "research_directory": "programs/cambridge/undergraduate/",
   "import_ready_directory": "programs/cambridge/undergraduate/import-ready/",
+  "single_page_extraction_test": "programs/cambridge/undergraduate/all-programs.html",
   "workbook_sha256": "d9b1e732ddb36b1a13d846ef00c0f7e194e77b3d8ed1be93454ba6eae96e88d4",
   "collection_official_sources": [
     "https://www.undergraduate.study.cam.ac.uk/courses/a-z",

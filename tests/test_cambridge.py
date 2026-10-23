@@ -84,6 +84,7 @@ class CambridgeResearchTests(unittest.TestCase):
             site = pipeline.build(temp_root, "https://example.github.io/bts-university-program-data")
             index = (site / cambridge.COLLECTION / "index.html").read_text(encoding="utf-8")
             ready = (site / cambridge.COLLECTION / "import-ready/index.html").read_text(encoding="utf-8")
+            all_programs = (site / cambridge.COLLECTION / "all-programs.html").read_text(encoding="utf-8")
             for record in self.records:
                 page = site / cambridge.COLLECTION / cambridge.filename(record)
                 self.assertTrue(page.is_file())
@@ -91,6 +92,17 @@ class CambridgeResearchTests(unittest.TestCase):
                 self.assertIn("UNVERIFIED_LANGUAGE", page.read_text(encoding="utf-8"))
                 self.assertNotIn(cambridge.filename(record), ready)
             self.assertIn("No programs currently qualify", ready)
+            self.assertIn("all-programs.html", index)
+            self.assertEqual(all_programs.count('<article class="program"'), 32)
+            self.assertEqual(all_programs.count("<h2>"), 32)
+            self.assertNotIn("<a ", all_programs)
+            self.assertNotIn("href=", all_programs)
+            self.assertNotIn("<link ", all_programs)
+            self.assertIn("None is eligible for BTS import", all_programs)
+            graph = all_programs.split('<script type="application/ld+json">', 1)[1].split("</script>", 1)[0]
+            self.assertEqual(len(json.loads(graph)["@graph"]), 32)
+            for record in self.records:
+                self.assertIn(f'id="{record["id"]}"', all_programs)
             for oxford in ("oxford-archaeology-and-anthropology-ba",
                            "oxford-classical-archaeology-and-ancient-history-ba",
                            "oxford-archaeological-science-msc"):

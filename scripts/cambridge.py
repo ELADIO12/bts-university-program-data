@@ -383,6 +383,7 @@ def ingest(workbook_path: Path, root: Path = ROOT) -> list[dict]:
     _json(target / "discovery-manifest.json", {
         "research_directory": COLLECTION + "/",
         "import_ready_directory": COLLECTION + "/import-ready/",
+        "single_page_extraction_test": COLLECTION + "/all-programs.html",
         "workbook_sha256": raw["sha256"],
         "collection_official_sources": collection_sources,
         "programs": [{"id": r["id"], "title": r["program"]["title"], "path": COLLECTION + "/" + filename(r)} for r in records]
@@ -576,10 +577,95 @@ def _program_html(record: dict, base_url: str) -> str:
     return _document(title, body, "../../../assets/style.css", canonical, course, noindex=True)
 
 
+def _all_programs_html(records: list[dict], base_url: str) -> str:
+    """One self-contained page for manual, review-only importer compatibility testing."""
+    esc = html.escape
+    articles = []
+    graph = []
+    canonical = base_url.rstrip("/") + "/" + COLLECTION + "/all-programs.html" if base_url else ""
+    compact_fields = (
+        "areas_of_study", "primary_area_of_study", "description_html",
+        "format", "attendance", "duration_original", "tuition_home",
+        "tuition_non_eu", "application_deadline_date", "start_application_url",
+        "admissions_requirements", "entrance_exam"
+    )
+    for record in records:
+        program = record["program"]
+        source = program["direct_program_url"] or program["research_source_url"]
+        fields = []
+        for key in compact_fields:
+            label = bts.LABELS[key]
+            field = record["bts_fields"][key]
+            if field["value"] is None:
+                continue
+            fields.append(
+                f'<dt>{esc(label)}</dt><dd data-status="workbook_reported" '
+                f'data-source-cell="{esc(field["source_cell"] or "", quote=True)}">'
+                f'{_display(field["value"], key)}</dd>'
+            )
+        generic = ("Compulsory teaching language", "Three existing Cambridge BTS",
+                   "Official Cambridge pages", "No verified direct course link",
+                   "Workbook standard 2027-entry deadline")
+        flags = "; ".join(esc(flag) for flag in record["review_flags"] if not flag.startswith(generic))
+        articles.append(
+            f'<article class="program" id="{esc(record["id"], quote=True)}">'
+            f'<h2>{esc(program["title"])} — {esc(program["qualification"])}</h2>'
+            f'<p>University: University of Cambridge. BTS university ID: 92862 '
+            f'(user-provided, not independently checked). Degree level: Bachelors '
+            f'(workbook-reported). Internal research ID: {esc(record["id"])}.</p>'
+            f'<p><strong>Status:</strong> research only; {esc(record["language_classification"])}; '
+            f'existing BTS match unknown; not eligible for import; human review pending. '
+            f'Workbook import status: {esc(record["workbook_import_status"])}.</p>'
+            f'<p>Original Cambridge source URL (plain text): {esc(source)}. '
+            f'Cambridge source pages attempted in this research pass returned HTTP 403; '
+            f'course-specific evidence requires permitted manual collection.</p>'
+            + '<p>Every populated field below is workbook-reported and awaits official verification. '
+            'The Excel cell is recorded in each field’s source-cell attribute.</p>'
+            + f'<dl>{"".join(fields)}</dl>'
+            + (f'<p><strong>Course-specific review notes:</strong> {flags}</p>' if flags else "")
+            + '</article>'
+        )
+        course = {
+            "@type": "Course",
+            "@id": (canonical + "#" + record["id"]) if canonical else "#" + record["id"],
+            "name": program["title"],
+            "identifier": record["id"],
+            "provider": {"@type": "CollegeOrUniversity", "name": "University of Cambridge"},
+            "additionalProperty": [
+                {"@type": "PropertyValue", "name": "Research status", "value": "workbook_reported; official verification pending"},
+                {"@type": "PropertyValue", "name": "BTS import eligibility", "value": "hold"}
+            ]
+        }
+        graph.append(course)
+    structured = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
+    structured = structured.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    style = (
+        "body{font:16px/1.55 system-ui,sans-serif;color:#1c2933;max-width:1000px;margin:auto;padding:2rem}"
+        "h1,h2,h3{line-height:1.25}h2{margin-top:0}.notice{background:#fff2d8;border:2px solid #a66b00;padding:1rem}"
+        ".program{border-top:3px solid #42647b;margin-top:2.5rem;padding-top:1.5rem}"
+        "section{margin:1rem 0}dt{font-weight:700;margin-top:.6rem}dd{margin:0 0 .7rem 0}"
+        "small{display:block;color:#52606d}li{margin:.25rem 0}code{overflow-wrap:anywhere}"
+    )
+    return (
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+        '<title>Cambridge undergraduate programs | one-page research extraction test</title>'
+        '<meta name="description" content="32 Cambridge undergraduate workbook research records on one self-contained page.">'
+        f'<style>{style}</style><script type="application/ld+json">{structured}</script></head><body>'
+        '<main><h1>University of Cambridge undergraduate programs — research extraction test</h1>'
+        '<aside class="notice"><strong>Independent research material.</strong> This is not an official University of Cambridge website. '
+        'All 32 records are workbook-reported, not independently verified. None is eligible for BTS import. '
+        'Use this page only to test extraction and stop at the importer review stage without confirming any imports.</aside>'
+        '<p>This self-contained page includes every program below. It has no links to other program pages and no external stylesheet or script.</p>'
+        + "".join(articles)
+        + '</main></body></html>'
+    )
+
+
 def site_files(records: list[dict]) -> set[str]:
     prefix = COLLECTION + "/"
     data = "data/cambridge/undergraduate/"
-    names = {prefix + "index.html", prefix + "import-ready/index.html",
+    names = {prefix + "index.html", prefix + "import-ready/index.html", prefix + "all-programs.html",
              data + "raw-workbook.json", data + "cambridge-undergraduate.json",
              data + "cambridge-undergraduate.csv", data + "discovery-manifest.json",
              data + "excluded-programs.json", data + "validation-report.json",
@@ -607,11 +693,13 @@ def build(root: Path, out: Path, base_url: str = "") -> set[str]:
         links.append(f'<li><a href="{html.escape(filename(r), quote=True)}">{html.escape(r["program"]["title"])}'
                      f' — {html.escape(r["program"]["qualification"])}</a>. '
                      f'Language: {r["language_classification"]}; import: hold.</li>')
+    write(COLLECTION + "/all-programs.html", _all_programs_html(records, base_url))
     research_body = (
         '<h1>University of Cambridge — Undergraduate Degree Programs</h1>'
         f'<p>{len(records)} workbook course records. No course has independently verified 100% English teaching. '
         'The three existing Cambridge BTS program identities are unavailable. All records remain research-only.</p>'
         '<p><strong>Do not submit this complete research directory to the BTS importer.</strong></p>'
+        '<p><a href="all-programs.html">One-page research extraction test</a> (all 32 records inline; review only).</p>'
         '<p><a href="import-ready/index.html">Separate BTS import-ready directory</a> (currently empty).</p>'
         '<p><a href="../../../data/cambridge/undergraduate/cambridge-undergraduate.csv">Download research CSV</a> · '
         '<a href="../../../data/cambridge/undergraduate/validation-report.json">Validation report</a></p>'
