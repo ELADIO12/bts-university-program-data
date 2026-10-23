@@ -27,6 +27,8 @@ DATA = Path("data/cambridge/undergraduate")
 SHEET = "BTS Fields - 32 Courses"
 WORKBOOK_NAME = "Cambridge_Undergraduate_BTS_Fields_2027_Research.xlsx"
 COLLECTION = "programs/cambridge/undergraduate"
+COMPATIBILITY_ID = "cambridge-environment-law-and-economics-ba-hons"
+COMPATIBILITY_PATH = COLLECTION + "/compatibility/environment-law-and-economics-ba-hons.html"
 SOURCE_COLUMNS = ("AY", "AZ", "BA")
 SOURCE_FIELD = {"AY": "Degree / Course Source", "AZ": "Tuition Source", "BA": "Admissions Source"}
 DIRECT_SOURCE = "Program Link"
@@ -662,10 +664,63 @@ def _all_programs_html(records: list[dict], base_url: str) -> str:
     )
 
 
+def _compatibility_program_html(record: dict, base_url: str) -> str:
+    """One independently addressable Course for manual candidate-discovery testing."""
+    esc = html.escape
+    program = record["program"]
+    source = program["direct_program_url"]
+    if not source:
+        raise ValueError("Compatibility test requires a workbook-provided direct course URL")
+    canonical = base_url.rstrip("/") + "/" + COMPATIBILITY_PATH if base_url else None
+    keys = (
+        "program_title", "degree_type", "degree_level", "areas_of_study",
+        "duration_original", "format", "attendance", "tuition_non_eu",
+        "application_deadline_date", "start_application_url", "admissions_requirements",
+    )
+    fields = []
+    for key in keys:
+        field = record["bts_fields"][key]
+        if field["value"] is None:
+            continue
+        fields.append(
+            f'<dt>{esc(bts.LABELS[key])}</dt><dd>{_display(field["value"], key)} '
+            f'<small>Workbook-reported ({esc(field["source_cell"] or "source cell unknown")}); '
+            'official verification pending.</small></dd>'
+        )
+    body = (
+        f'<h1>{esc(program["title"])} — {esc(program["qualification"])}</h1>'
+        '<p>University of Cambridge · Undergraduate program</p>'
+        '<p><strong>Research status:</strong> Workbook-reported. Official field verification pending. '
+        'Compulsory teaching language unverified; existing BTS match unknown; import eligibility on hold.</p>'
+        '<p>This page contains one program for a manual URL-discovery compatibility test. '
+        'Stop at the BTS review stage; do not confirm an import.</p>'
+        f'<p><a href="{esc(source, quote=True)}">Original Cambridge course page</a> '
+        '(URL supplied by workbook; course contents not independently verified).</p>'
+        '<h2>Workbook-reported fields</h2><dl>' + "".join(fields) + '</dl>'
+        '<p>Missing fields are omitted. Reported values require checking against official Cambridge evidence.</p>'
+    )
+    course = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": program["title"],
+        "identifier": record["id"],
+        "provider": {"@type": "CollegeOrUniversity", "name": "University of Cambridge"},
+        "isBasedOn": source,
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": "Research status", "value": "workbook_reported; official verification pending"},
+            {"@type": "PropertyValue", "name": "BTS import eligibility", "value": "hold"},
+        ],
+    }
+    if canonical:
+        course["url"] = canonical
+    return _document(program["title"], body, "../../../../assets/style.css", canonical, course)
+
+
 def site_files(records: list[dict]) -> set[str]:
     prefix = COLLECTION + "/"
     data = "data/cambridge/undergraduate/"
     names = {prefix + "index.html", prefix + "import-ready/index.html", prefix + "all-programs.html",
+             prefix + "compatibility/index.html", COMPATIBILITY_PATH,
              data + "raw-workbook.json", data + "cambridge-undergraduate.json",
              data + "cambridge-undergraduate.csv", data + "discovery-manifest.json",
              data + "excluded-programs.json", data + "validation-report.json",
@@ -694,12 +749,27 @@ def build(root: Path, out: Path, base_url: str = "") -> set[str]:
                      f' — {html.escape(r["program"]["qualification"])}</a>. '
                      f'Language: {r["language_classification"]}; import: hold.</li>')
     write(COLLECTION + "/all-programs.html", _all_programs_html(records, base_url))
+    compatibility = next(r for r in records if r["id"] == COMPATIBILITY_ID)
+    write(COMPATIBILITY_PATH, _compatibility_program_html(compatibility, base_url))
+    compatibility_body = (
+        '<h1>Cambridge single-program compatibility test</h1>'
+        '<p>This directory links to exactly one independent program page so a URL-based '
+        'importer can attempt candidate discovery. The workbook data is unverified and '
+        'import eligibility remains on hold. Stop at review without confirming an import.</p>'
+        '<ul><li><a href="environment-law-and-economics-ba-hons.html">'
+        'Environment, Law, and Economics — BA (Hons)</a></li></ul>'
+    )
+    compatibility_canonical = base_url.rstrip("/") + "/" + COLLECTION + "/compatibility/" if base_url else None
+    write(COLLECTION + "/compatibility/index.html", _document(
+        "Cambridge single-program compatibility test", compatibility_body,
+        "../../../../assets/style.css", compatibility_canonical))
     research_body = (
         '<h1>University of Cambridge — Undergraduate Degree Programs</h1>'
         f'<p>{len(records)} workbook course records. No course has independently verified 100% English teaching. '
         'The three existing Cambridge BTS program identities are unavailable. All records remain research-only.</p>'
         '<p><strong>Do not submit this complete research directory to the BTS importer.</strong></p>'
         '<p><a href="all-programs.html">One-page research extraction test</a> (all 32 records inline; review only).</p>'
+        '<p><a href="compatibility/index.html">Single-program compatibility test</a> (one linked program; review only).</p>'
         '<p><a href="import-ready/index.html">Separate BTS import-ready directory</a> (currently empty).</p>'
         '<p><a href="../../../data/cambridge/undergraduate/cambridge-undergraduate.csv">Download research CSV</a> · '
         '<a href="../../../data/cambridge/undergraduate/validation-report.json">Validation report</a></p>'

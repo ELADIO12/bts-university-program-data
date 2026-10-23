@@ -85,6 +85,8 @@ class CambridgeResearchTests(unittest.TestCase):
             index = (site / cambridge.COLLECTION / "index.html").read_text(encoding="utf-8")
             ready = (site / cambridge.COLLECTION / "import-ready/index.html").read_text(encoding="utf-8")
             all_programs = (site / cambridge.COLLECTION / "all-programs.html").read_text(encoding="utf-8")
+            compatibility_index = (site / cambridge.COLLECTION / "compatibility/index.html").read_text(encoding="utf-8")
+            compatibility_page = (site / cambridge.COMPATIBILITY_PATH).read_text(encoding="utf-8")
             for record in self.records:
                 page = site / cambridge.COLLECTION / cambridge.filename(record)
                 self.assertTrue(page.is_file())
@@ -103,6 +105,17 @@ class CambridgeResearchTests(unittest.TestCase):
             self.assertEqual(len(json.loads(graph)["@graph"]), 32)
             for record in self.records:
                 self.assertIn(f'id="{record["id"]}"', all_programs)
+            self.assertEqual(compatibility_index.count('href="environment-law-and-economics-ba-hons.html"'), 1)
+            self.assertNotIn('name="robots"', compatibility_index)
+            self.assertNotIn('name="robots"', compatibility_page)
+            self.assertIn("Official field verification pending", compatibility_page)
+            self.assertIn("import eligibility on hold", compatibility_page)
+            self.assertIn("do not confirm an import", compatibility_page)
+            self.assertIn("https://www.undergraduate.study.cam.ac.uk/courses/environment-law-economics-ba-hons", compatibility_page)
+            compatibility_course = compatibility_page.split('<script type="application/ld+json">', 1)[1].split("</script>", 1)[0]
+            self.assertEqual(json.loads(compatibility_course)["@type"], "Course")
+            self.assertEqual(json.loads(compatibility_course)["identifier"], cambridge.COMPATIBILITY_ID)
+            self.assertNotIn('"@graph"', compatibility_course)
             for oxford in ("oxford-archaeology-and-anthropology-ba",
                            "oxford-classical-archaeology-and-ancient-history-ba",
                            "oxford-archaeological-science-msc"):
