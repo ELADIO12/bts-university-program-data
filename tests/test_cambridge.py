@@ -87,6 +87,7 @@ class CambridgeResearchTests(unittest.TestCase):
             all_programs = (site / cambridge.COLLECTION / "all-programs.html").read_text(encoding="utf-8")
             compatibility_index = (site / cambridge.COLLECTION / "compatibility/index.html").read_text(encoding="utf-8")
             compatibility_page = (site / cambridge.COMPATIBILITY_PATH).read_text(encoding="utf-8")
+            batch_index = (site / cambridge.BATCH_COLLECTION / "index.html").read_text(encoding="utf-8")
             for record in self.records:
                 page = site / cambridge.COLLECTION / cambridge.filename(record)
                 self.assertTrue(page.is_file())
@@ -116,6 +117,15 @@ class CambridgeResearchTests(unittest.TestCase):
             self.assertEqual(json.loads(compatibility_course)["@type"], "Course")
             self.assertEqual(json.loads(compatibility_course)["identifier"], cambridge.COMPATIBILITY_ID)
             self.assertNotIn('"@graph"', compatibility_course)
+            self.assertEqual(batch_index.count('<li><a href="'), 32)
+            self.assertNotIn('name="robots"', batch_index)
+            for record in self.records:
+                batch_page = (site / cambridge.BATCH_COLLECTION / cambridge.filename(record)).read_text(encoding="utf-8")
+                self.assertIn(f'href="{cambridge.filename(record)}"', batch_index)
+                self.assertNotIn('name="robots"', batch_page)
+                self.assertIn("import eligibility on hold", batch_page)
+                course = batch_page.split('<script type="application/ld+json">', 1)[1].split("</script>", 1)[0]
+                self.assertEqual(json.loads(course)["identifier"], record["id"])
             for oxford in ("oxford-archaeology-and-anthropology-ba",
                            "oxford-classical-archaeology-and-ancient-history-ba",
                            "oxford-archaeological-science-msc"):

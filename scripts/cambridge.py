@@ -29,6 +29,7 @@ WORKBOOK_NAME = "Cambridge_Undergraduate_BTS_Fields_2027_Research.xlsx"
 COLLECTION = "programs/cambridge/undergraduate"
 COMPATIBILITY_ID = "cambridge-environment-law-and-economics-ba-hons"
 COMPATIBILITY_PATH = COLLECTION + "/compatibility/environment-law-and-economics-ba-hons.html"
+BATCH_COLLECTION = COLLECTION + "/compatibility/all"
 SOURCE_COLUMNS = ("AY", "AZ", "BA")
 SOURCE_FIELD = {"AY": "Degree / Course Source", "AZ": "Tuition Source", "BA": "Admissions Source"}
 DIRECT_SOURCE = "Program Link"
@@ -664,14 +665,13 @@ def _all_programs_html(records: list[dict], base_url: str) -> str:
     )
 
 
-def _compatibility_program_html(record: dict, base_url: str) -> str:
+def _compatibility_program_html(record: dict, base_url: str, path: str = COMPATIBILITY_PATH,
+                                stylesheet: str = "../../../../assets/style.css") -> str:
     """One independently addressable Course for manual candidate-discovery testing."""
     esc = html.escape
     program = record["program"]
-    source = program["direct_program_url"]
-    if not source:
-        raise ValueError("Compatibility test requires a workbook-provided direct course URL")
-    canonical = base_url.rstrip("/") + "/" + COMPATIBILITY_PATH if base_url else None
+    source = program["direct_program_url"] or program["research_source_url"]
+    canonical = base_url.rstrip("/") + "/" + path if base_url else None
     keys = (
         "program_title", "degree_type", "degree_level", "areas_of_study",
         "duration_original", "format", "attendance", "tuition_non_eu",
@@ -694,8 +694,10 @@ def _compatibility_program_html(record: dict, base_url: str) -> str:
         'Compulsory teaching language unverified; existing BTS match unknown; import eligibility on hold.</p>'
         '<p>This page contains one program for a manual URL-discovery compatibility test. '
         'Stop at the BTS review stage; do not confirm an import.</p>'
-        f'<p><a href="{esc(source, quote=True)}">Original Cambridge course page</a> '
-        '(URL supplied by workbook; course contents not independently verified).</p>'
+        f'<p><a href="{esc(source, quote=True)}">'
+        + ('Cambridge course page URL supplied by workbook' if program["direct_program_url"]
+           else 'Cambridge course directory; direct course URL missing from workbook')
+        + '</a>. Course contents not independently verified.</p>'
         '<h2>Workbook-reported fields</h2><dl>' + "".join(fields) + '</dl>'
         '<p>Missing fields are omitted. Reported values require checking against official Cambridge evidence.</p>'
     )
@@ -713,7 +715,7 @@ def _compatibility_program_html(record: dict, base_url: str) -> str:
     }
     if canonical:
         course["url"] = canonical
-    return _document(program["title"], body, "../../../../assets/style.css", canonical, course)
+    return _document(program["title"], body, stylesheet, canonical, course)
 
 
 def site_files(records: list[dict]) -> set[str]:
@@ -721,6 +723,7 @@ def site_files(records: list[dict]) -> set[str]:
     data = "data/cambridge/undergraduate/"
     names = {prefix + "index.html", prefix + "import-ready/index.html", prefix + "all-programs.html",
              prefix + "compatibility/index.html", COMPATIBILITY_PATH,
+             BATCH_COLLECTION + "/index.html",
              data + "raw-workbook.json", data + "cambridge-undergraduate.json",
              data + "cambridge-undergraduate.csv", data + "discovery-manifest.json",
              data + "excluded-programs.json", data + "validation-report.json",
@@ -728,6 +731,7 @@ def site_files(records: list[dict]) -> set[str]:
              "reports/cambridge/source-coverage.md"}
     for r in records:
         names.add(prefix + filename(r))
+        names.add(BATCH_COLLECTION + "/" + filename(r))
         names.add(data + "programs/" + r["id"] + ".json")
     return names
 
@@ -751,6 +755,28 @@ def build(root: Path, out: Path, base_url: str = "") -> set[str]:
     write(COLLECTION + "/all-programs.html", _all_programs_html(records, base_url))
     compatibility = next(r for r in records if r["id"] == COMPATIBILITY_ID)
     write(COMPATIBILITY_PATH, _compatibility_program_html(compatibility, base_url))
+    batch_links = []
+    for r in records:
+        name = filename(r)
+        write(BATCH_COLLECTION + "/" + name, _compatibility_program_html(
+            r, base_url, BATCH_COLLECTION + "/" + name, "../../../../../assets/style.css"))
+        batch_links.append(
+            f'<li><a href="{html.escape(name, quote=True)}">'
+            f'{html.escape(r["program"]["title"])} — {html.escape(r["program"]["qualification"])}</a></li>'
+        )
+    batch_body = (
+        '<h1>University of Cambridge undergraduate program research directory</h1>'
+        f'<p>{len(records)} individual program pages are linked below. Each page contains '
+        'one workbook-reported course with a separate URL and Course structured data.</p>'
+        '<p><strong>Verification status:</strong> All records require official source review, '
+        'teaching-language verification, and a BTS duplicate check. None is approved for import. '
+        'For an importer compatibility test, stop at review without confirming an import.</p>'
+        '<h2>Program pages</h2><ul>' + "".join(batch_links) + '</ul>'
+    )
+    batch_canonical = base_url.rstrip("/") + "/" + BATCH_COLLECTION + "/" if base_url else None
+    write(BATCH_COLLECTION + "/index.html", _document(
+        "Cambridge batch compatibility directory", batch_body,
+        "../../../../../assets/style.css", batch_canonical))
     compatibility_body = (
         '<h1>Cambridge single-program compatibility test</h1>'
         '<p>This directory links to exactly one independent program page so a URL-based '
@@ -770,6 +796,7 @@ def build(root: Path, out: Path, base_url: str = "") -> set[str]:
         '<p><strong>Do not submit this complete research directory to the BTS importer.</strong></p>'
         '<p><a href="all-programs.html">One-page research extraction test</a> (all 32 records inline; review only).</p>'
         '<p><a href="compatibility/index.html">Single-program compatibility test</a> (one linked program; review only).</p>'
+        '<p><a href="compatibility/all/index.html">Batch compatibility test</a> (32 linked programs; review only).</p>'
         '<p><a href="import-ready/index.html">Separate BTS import-ready directory</a> (currently empty).</p>'
         '<p><a href="../../../data/cambridge/undergraduate/cambridge-undergraduate.csv">Download research CSV</a> · '
         '<a href="../../../data/cambridge/undergraduate/validation-report.json">Validation report</a></p>'
