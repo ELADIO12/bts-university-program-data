@@ -1,8 +1,14 @@
-# BTS university program data — Oxford pilot and Cambridge research
+# BTS university program data — Oxford, Cambridge and Imperial research
 
 A Python 3.12 static publishing pilot for **bts-university-program-data**. It turns reviewed Oxford facts into JSON, individual HTML pages, per-program completeness reports, a public directory and CSV. It has no backend, credentials, BTS connector or network-fetching code. No BTS production system was accessed or changed.
 
-**Status:** the three Oxford pilot records remain partial and human-review pending. A separate Cambridge undergraduate collection contains 32 workbook-derived research records. None of the Cambridge records is import-ready: compulsory teaching language is unverified for all 32 and the identities of three existing Cambridge BTS programs were not provided. No record is approved for BTS publication.
+**Status:** the three Oxford pilot records remain partial and human-review pending. The Cambridge undergraduate collection contains 32 workbook-derived research records, all on hold. A separate Imperial 2027 undergraduate collection contains 73 primary course listings and 43 study options, each with an individual page. No record is approved for BTS publication.
+
+## Imperial undergraduate 2027 collection
+
+The [Imperial research directory](https://eladio12.github.io/bts-university-program-data/programs/imperial/undergraduate/) links to all 116 individual pages. The [factual source catalog](data/imperial/undergraduate-2027.json) was compiled from Imperial's official 2027 course pages on 2026-10-26. Each generated page links to its original Imperial course page, states verification and review status, and has a separate JSON record with per-field provenance. The public site also offers a [CSV export](https://eladio12.github.io/bts-university-program-data/data/imperial/undergraduate/programs.csv). Read [Imperial research status](docs/IMPERIAL_RESEARCH.md) for coverage and limits.
+
+This is a new, independent collection, separate from the Cambridge workbook and Oxford pilot. Its directory has not been tested in the BTS importer. Language of instruction, English proficiency requirements, BTS university slug and some tuition details remain unverified; every record requires human review and is on hold.
 
 ## Cambridge undergraduate workbook collection
 

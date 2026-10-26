@@ -1,0 +1,2946 @@
+{
+  "source_directory": "https://www.imperial.ac.uk/study/courses/?courseType=undergraduate",
+  "directory_listing_count": 73,
+  "course_page_count": 73,
+  "record_count": 116,
+  "verification_date": "2026-10-26",
+  "source_note": "Factual fields observed on Imperial College London's official 2027 course pages; no descriptions stored. Study options are separate records. Human review and BTS eligibility checks remain pending.",
+  "records": [
+    {
+      "id": "imperial-aeronautical-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautical-engineering/",
+      "listing_number": 1,
+      "option_index": 0,
+      "title": "Aeronautical Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Aeronautics",
+      "ucas_code": "H401",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-levels)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-aeronautical-engineering-with-an-integrated-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautical-engineering/",
+      "listing_number": 1,
+      "option_index": 1,
+      "title": "Aeronautical Engineering with an Integrated Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Aeronautics",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-levels)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-aeronautical-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautical-engineering/",
+      "listing_number": 1,
+      "option_index": 2,
+      "title": "Aeronautical Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Aeronautics",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-levels)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-aeronautical-engineering-with-a-year-in-industry-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautical-engineering/",
+      "listing_number": 1,
+      "option_index": 3,
+      "title": "Aeronautical Engineering with a Year in Industry",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Aeronautics",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-levels)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-aeronautics-with-spacecraft-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/aeronautics-spacecraft-engineering/",
+      "listing_number": 2,
+      "option_index": 0,
+      "title": "Aeronautics with Spacecraft Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Aeronautics",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-bsc/",
+      "listing_number": 3,
+      "option_index": 0,
+      "title": "Biochemistry",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C700",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-research-abroad-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-bsc/",
+      "listing_number": 3,
+      "option_index": 1,
+      "title": "Biochemistry with Research Abroad",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-a-year-in-industry-research-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-bsc/",
+      "listing_number": 3,
+      "option_index": 2,
+      "title": "Biochemistry with a Year in Industry/Research",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-msci/",
+      "listing_number": 4,
+      "option_index": 0,
+      "title": "Biochemistry",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C703",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-language-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-language/",
+      "listing_number": 5,
+      "option_index": 0,
+      "title": "Biochemistry with Language for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-french-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-language/",
+      "listing_number": 5,
+      "option_index": 1,
+      "title": "Biochemistry with French for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C7R1",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-german-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-language/",
+      "listing_number": 5,
+      "option_index": 2,
+      "title": "Biochemistry with German for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C7R2",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-spanish-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-language/",
+      "listing_number": 5,
+      "option_index": 3,
+      "title": "Biochemistry with Spanish for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C7R4",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-management-3-years-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-management/",
+      "listing_number": 6,
+      "option_index": 0,
+      "title": "Biochemistry with Management (3 years)",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biochemistry-with-management-4-years-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biochemistry-management/",
+      "listing_number": 6,
+      "option_index": 1,
+      "title": "Biochemistry with Management (4 years)",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences/",
+      "listing_number": 7,
+      "option_index": 0,
+      "title": "Biological Sciences",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C100",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-research-abroad-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences/",
+      "listing_number": 7,
+      "option_index": 1,
+      "title": "Biological Sciences with Research Abroad",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-a-year-in-industry-research-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences/",
+      "listing_number": 7,
+      "option_index": 2,
+      "title": "Biological Sciences with a Year in Industry/Research",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-msci/",
+      "listing_number": 8,
+      "option_index": 0,
+      "title": "Biological Sciences",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C103",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-language-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-language/",
+      "listing_number": 9,
+      "option_index": 0,
+      "title": "Biological Sciences with Language for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-french-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-language/",
+      "listing_number": 9,
+      "option_index": 1,
+      "title": "Biological Sciences with French for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C1R1",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-german-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-language/",
+      "listing_number": 9,
+      "option_index": 2,
+      "title": "Biological Sciences with German for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C1R2",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-spanish-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-language/",
+      "listing_number": 9,
+      "option_index": 3,
+      "title": "Biological Sciences with Spanish for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C1R4",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-management-3-years-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-management/",
+      "listing_number": 10,
+      "option_index": 0,
+      "title": "Biological Sciences with Management (3 years)",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biological-sciences-with-management-4-years-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biological-sciences-management/",
+      "listing_number": 10,
+      "option_index": 1,
+      "title": "Biological Sciences with Management (4 years)",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomaterials-and-tissue-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomaterials-tissue-engineering-meng/",
+      "listing_number": 11,
+      "option_index": 0,
+      "title": "Biomaterials and Tissue Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Materials",
+      "ucas_code": "BJ95",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomedical-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomedical-engineering/",
+      "listing_number": 12,
+      "option_index": 0,
+      "title": "Biomedical Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": "BH9C",
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomedical-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomedical-engineering/",
+      "listing_number": 12,
+      "option_index": 1,
+      "title": "Biomedical Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomedical-engineering-with-a-year-in-industry-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomedical-engineering/",
+      "listing_number": 12,
+      "option_index": 2,
+      "title": "Biomedical Engineering with a Year in Industry",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomedical-technology-ventures-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomedical-technology-ventures/",
+      "listing_number": 13,
+      "option_index": 0,
+      "title": "Biomedical Technology Ventures",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": "B800",
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biomedical-technology-ventures-with-a-year-in-industry-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biomedical-technology-ventures/",
+      "listing_number": 13,
+      "option_index": 1,
+      "title": "Biomedical Technology Ventures with a Year in Industry",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology/",
+      "listing_number": 14,
+      "option_index": 0,
+      "title": "Biotechnology",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "J700",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-research-abroad-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology/",
+      "listing_number": 14,
+      "option_index": 1,
+      "title": "Biotechnology with Research Abroad",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-a-year-in-industry-research-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology/",
+      "listing_number": 14,
+      "option_index": 2,
+      "title": "Biotechnology with a Year in Industry/Research",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-msci/",
+      "listing_number": 15,
+      "option_index": 0,
+      "title": "Biotechnology",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "J703",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-language-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-language/",
+      "listing_number": 16,
+      "option_index": 0,
+      "title": "Biotechnology with Language for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-french-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-language/",
+      "listing_number": 16,
+      "option_index": 1,
+      "title": "Biotechnology with French for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "J7R1",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-german-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-language/",
+      "listing_number": 16,
+      "option_index": 2,
+      "title": "Biotechnology with German for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "J7R2",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-spanish-for-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-language/",
+      "listing_number": 16,
+      "option_index": 3,
+      "title": "Biotechnology with Spanish for Science",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "J7R4",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-biotechnology-with-management-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/biotechnology-management/",
+      "listing_number": 17,
+      "option_index": 0,
+      "title": "Biotechnology with Management",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemical-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemical-engineering/",
+      "listing_number": 18,
+      "option_index": 0,
+      "title": "Chemical Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Chemical Engineering",
+      "ucas_code": "H801",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemical-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemical-engineering/",
+      "listing_number": 18,
+      "option_index": 1,
+      "title": "Chemical Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Chemical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-bsc/",
+      "listing_number": 19,
+      "option_index": 0,
+      "title": "Chemistry",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F100",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-msci/",
+      "listing_number": 20,
+      "option_index": 0,
+      "title": "Chemistry",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F103",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-a-year-in-industry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-msci/",
+      "listing_number": 20,
+      "option_index": 1,
+      "title": "Chemistry with a Year in Industry",
+      "qualification": "MSci",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F105",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-research-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-msci/",
+      "listing_number": 20,
+      "option_index": 2,
+      "title": "Chemistry with Research Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F104",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-research-abroad-and-a-year-in-industry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-msci/",
+      "listing_number": 20,
+      "option_index": 3,
+      "title": "Chemistry with Research Abroad and a Year in Industry",
+      "qualification": "MSci",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F101",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-management-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-management/",
+      "listing_number": 21,
+      "option_index": 0,
+      "title": "Chemistry with Management",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F1NF",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-medicinal-chemistry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-medicinal/",
+      "listing_number": 22,
+      "option_index": 0,
+      "title": "Chemistry with Medicinal Chemistry",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F124",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-medicinal-chemistry-and-a-year-in-industry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-medicinal/",
+      "listing_number": 22,
+      "option_index": 1,
+      "title": "Chemistry with Medicinal Chemistry and a Year in Industry",
+      "qualification": "MSci",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F125",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-molecular-physics-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-molecular-physics/",
+      "listing_number": 23,
+      "option_index": 0,
+      "title": "Chemistry with Molecular Physics",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F1F3",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-chemistry-with-molecular-physics-and-a-year-in-industry-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/chemistry-molecular-physics/",
+      "listing_number": 23,
+      "option_index": 1,
+      "title": "Chemistry with Molecular Physics and a Year in Industry",
+      "qualification": "MSci",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Chemistry",
+      "ucas_code": "F1FH",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-civil-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/civil-engineering/",
+      "listing_number": 24,
+      "option_index": 0,
+      "title": "Civil Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Civil and Environmental Engineering",
+      "ucas_code": "H201",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-civil-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/civil-engineering/",
+      "listing_number": 24,
+      "option_index": 1,
+      "title": "Civil Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Civil and Environmental Engineering",
+      "ucas_code": "H202",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-meng/",
+      "listing_number": 25,
+      "option_index": 0,
+      "title": "Computing",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G401",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-beng/",
+      "listing_number": 26,
+      "option_index": 0,
+      "title": "Computing",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G400",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-artificial-intelligence-and-machine-learning-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-artificial-intelligence-meng/",
+      "listing_number": 27,
+      "option_index": 0,
+      "title": "Computing (Artificial Intelligence and Machine Learning)",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G700",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-international-programme-of-study-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-international-programme-of-study/",
+      "listing_number": 28,
+      "option_index": 0,
+      "title": "Computing (International Programme of Study)",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G402",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-security-and-reliability-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-security-reliability-meng/",
+      "listing_number": 29,
+      "option_index": 0,
+      "title": "Computing (Security and Reliability)",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G610",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-software-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-software-engineering-meng/",
+      "listing_number": 30,
+      "option_index": 0,
+      "title": "Computing (Software Engineering)",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "G600",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-computing-visual-computing-and-robotics-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/computing-visual-computing-robotics-meng/",
+      "listing_number": 31,
+      "option_index": 0,
+      "title": "Computing (Visual Computing and Robotics)",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "GG47",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-design-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/design-engineering/",
+      "listing_number": 32,
+      "option_index": 0,
+      "title": "Design Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Dyson School of Design Engineering",
+      "ucas_code": "28G3",
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-earth-and-planetary-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/earth-planetary-science-bsc/",
+      "listing_number": 33,
+      "option_index": 0,
+      "title": "Earth and Planetary Science",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F64B",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-earth-and-planetary-science-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/earth-planetary-science-msci/",
+      "listing_number": 34,
+      "option_index": 0,
+      "title": "Earth and Planetary Science",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F647",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-earth-and-planetary-science-with-a-year-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/earth-planetary-science-msci/",
+      "listing_number": 34,
+      "option_index": 1,
+      "title": "Earth and Planetary Science with a Year Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F520",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-ecology-and-environmental-biology-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/ecology-environmental-biology/",
+      "listing_number": 35,
+      "option_index": 0,
+      "title": "Ecology and Environmental Biology",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C180",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-economics-finance-and-data-science-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/economics-finance-data-science/",
+      "listing_number": 36,
+      "option_index": 0,
+      "title": "Economics, Finance and Data Science",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Imperial Business School",
+      "ucas_code": "L1N3",
+      "minimum_entry_standard": [
+        "A*AA (A-levels)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44800,
+        "period": null,
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electrical-and-electronic-engineering-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electrical-electronic-engineering-beng/",
+      "listing_number": 37,
+      "option_index": 0,
+      "title": "Electrical and Electronic Engineering",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": "H600",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electrical-and-electronic-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electrical-electronic-engineering-meng/",
+      "listing_number": 38,
+      "option_index": 0,
+      "title": "Electrical and Electronic Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": "H604",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electrical-and-electronic-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electrical-electronic-engineering-meng/",
+      "listing_number": 38,
+      "option_index": 1,
+      "title": "Electrical and Electronic Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electrical-and-electronic-engineering-with-management-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electrical-electronic-engineering-management/",
+      "listing_number": 39,
+      "option_index": 0,
+      "title": "Electrical and Electronic Engineering with Management",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": "H6N2",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electronic-and-information-engineering-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electronic-information-beng/",
+      "listing_number": 40,
+      "option_index": 0,
+      "title": "Electronic and Information Engineering",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": "HG65",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electronic-and-information-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electronic-information-meng/",
+      "listing_number": 41,
+      "option_index": 0,
+      "title": "Electronic and Information Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": "GH56",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-electronic-and-information-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/electronic-information-meng/",
+      "listing_number": 41,
+      "option_index": 1,
+      "title": "Electronic and Information Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Electrical and Electronic Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geology-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geology-bsc/",
+      "listing_number": 42,
+      "option_index": 0,
+      "title": "Geology",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F600",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geology-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geology-msci/",
+      "listing_number": 43,
+      "option_index": 0,
+      "title": "Geology",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F640",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geology-with-a-year-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geology-msci/",
+      "listing_number": 43,
+      "option_index": 1,
+      "title": "Geology with a Year Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F601",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geophysics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geophysics-bsc/",
+      "listing_number": 44,
+      "option_index": 0,
+      "title": "Geophysics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F662",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geophysics-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geophysics-msci/",
+      "listing_number": 45,
+      "option_index": 0,
+      "title": "Geophysics",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F660",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-geophysics-with-a-year-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/geophysics-msci/",
+      "listing_number": 45,
+      "option_index": 1,
+      "title": "Geophysics with a Year Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Earth Science and Engineering",
+      "ucas_code": "F664",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-intercalated-phd-option-for-medical-students-mbbs-phd",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medicine-phd/",
+      "listing_number": 46,
+      "option_index": 0,
+      "title": "Intercalated PhD option for Medical Students",
+      "qualification": "MBBS/PhD",
+      "duration": "9 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "School of Medicine",
+      "ucas_code": null,
+      "minimum_entry_standard": null,
+      "overseas_fee": {
+        "amount_gbp": 61550,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": null
+    },
+    {
+      "id": "imperial-materials-science-and-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/materials-science-engineering-meng/",
+      "listing_number": 47,
+      "option_index": 0,
+      "title": "Materials Science and Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Materials",
+      "ucas_code": "JFM2",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-materials-science-and-engineering-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/materials-science-engineering-beng/",
+      "listing_number": 48,
+      "option_index": 0,
+      "title": "Materials Science and Engineering",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Materials",
+      "ucas_code": "JF52",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-materials-with-nuclear-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/materials-nuclear-engineering/",
+      "listing_number": 49,
+      "option_index": 0,
+      "title": "Materials with Nuclear Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Materials",
+      "ucas_code": "J5H8",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-msci/",
+      "listing_number": 50,
+      "option_index": 0,
+      "title": "Mathematics",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G103",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-with-a-year-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-msci/",
+      "listing_number": 50,
+      "option_index": 1,
+      "title": "Mathematics with a Year Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G104",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-bsc/",
+      "listing_number": 51,
+      "option_index": 0,
+      "title": "Mathematics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G100",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-pure-mathematics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/pure-mathematics-bsc/",
+      "listing_number": 52,
+      "option_index": 0,
+      "title": "Mathematics (Pure Mathematics)",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G125",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-and-computer-science-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-computer-science-meng/",
+      "listing_number": 53,
+      "option_index": 0,
+      "title": "Mathematics and Computer Science",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "GG41",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-and-computer-science-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-computer-science-beng/",
+      "listing_number": 54,
+      "option_index": 0,
+      "title": "Mathematics and Computer Science",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "GG14",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-and-computer-science-for-artificial-intelligence-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-computer-science-ai-meng/",
+      "listing_number": 55,
+      "option_index": 0,
+      "title": "Mathematics and Computer Science for Artificial Intelligence",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "GG03",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-and-computer-science-for-artificial-intelligence-beng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-computer-science-ai-beng/",
+      "listing_number": 56,
+      "option_index": 0,
+      "title": "Mathematics and Computer Science for Artificial Intelligence",
+      "qualification": "BEng",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Computing",
+      "ucas_code": "GG02",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "41 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-with-applied-mathematics-mathematical-physics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-applied-physics/",
+      "listing_number": 57,
+      "option_index": 0,
+      "title": "Mathematics with Applied Mathematics/Mathematical Physics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G1F3",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-with-mathematical-computation-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-computation/",
+      "listing_number": 58,
+      "option_index": 0,
+      "title": "Mathematics with Mathematical Computation",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G102",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-with-statistics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-statistics/",
+      "listing_number": 59,
+      "option_index": 0,
+      "title": "Mathematics with Statistics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G1G3",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mathematics-with-statistics-for-finance-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mathematics-statistics-finance/",
+      "listing_number": 60,
+      "option_index": 0,
+      "title": "Mathematics with Statistics for Finance",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mathematics",
+      "ucas_code": "G1GH",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 44850,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering/",
+      "listing_number": 61,
+      "option_index": 0,
+      "title": "Mechanical Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": "H301",
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-engineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering/",
+      "listing_number": 61,
+      "option_index": 1,
+      "title": "Mechanical Engineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-engineering-with-a-year-in-industry-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering/",
+      "listing_number": 61,
+      "option_index": 2,
+      "title": "Mechanical Engineering with a Year in Industry",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-engineering-with-a-year-in-industry-and-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering/",
+      "listing_number": 61,
+      "option_index": 3,
+      "title": "Mechanical Engineering with a Year in Industry and a Year Abroad",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-engineering-with-nuclear-engineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering-nuclear/",
+      "listing_number": 62,
+      "option_index": 0,
+      "title": "Mechanical Engineering with Nuclear Engineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": null,
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-mechanical-eng-with-nuclear-eng-and-a-year-in-industry-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/mechanical-engineering-nuclear/",
+      "listing_number": 62,
+      "option_index": 1,
+      "title": "Mechanical Eng. with Nuclear Eng. and a Year in Industry",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Mechanical Engineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*A*A or A*AAA (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-medical-biosciences-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medical-biosciences/",
+      "listing_number": 63,
+      "option_index": 0,
+      "title": "Medical Biosciences",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "Hammersmith",
+        "South Kensington"
+      ],
+      "department": "School of Medicine",
+      "ucas_code": "B101",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-medical-biosciences-with-management-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medical-biosciences-management/",
+      "listing_number": 64,
+      "option_index": 0,
+      "title": "Medical Biosciences with Management",
+      "qualification": "BSc",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "Hammersmith",
+        "South Kensington"
+      ],
+      "department": "Imperial Business School",
+      "ucas_code": "B111",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-medical-science-and-innovation-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medical-science-innovation/",
+      "listing_number": 65,
+      "option_index": 0,
+      "title": "Medical Science and Innovation",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "Charing Cross",
+        "Hammersmith",
+        "South Kensington",
+        "White City"
+      ],
+      "department": "School of Medicine",
+      "ucas_code": "B980",
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 61550,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-medicine-mbbs-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medicine/",
+      "listing_number": 66,
+      "option_index": 0,
+      "title": "Medicine",
+      "qualification": "MBBS/BSc",
+      "duration": "6 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "Charing Cross",
+        "South Kensington"
+      ],
+      "department": "School of Medicine",
+      "ucas_code": "A100",
+      "minimum_entry_standard": [
+        "A*AA including Chemistry and Biology, with A* in one of these subjects (A-levels)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 61550,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": null
+    },
+    {
+      "id": "imperial-medicine-graduate-entry-mbbs-4yft-mbbs",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/medicine-graduate-entry/",
+      "listing_number": 67,
+      "option_index": 0,
+      "title": "Medicine (Graduate Entry) (MBBS 4YFT)",
+      "qualification": "MBBS",
+      "duration": "4 years",
+      "start_date": "September 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "Pears Cumbria School of Medicine"
+      ],
+      "department": "Pears Cumbria School of Medicine",
+      "ucas_code": "A102",
+      "minimum_entry_standard": [
+        "2:1 (or above) in a Biosciences or Allied Healthcare degree."
+      ],
+      "overseas_fee": null,
+      "application_url": null
+    },
+    {
+      "id": "imperial-microbiology-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/microbiology/",
+      "listing_number": 68,
+      "option_index": 0,
+      "title": "Microbiology",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Life Sciences",
+      "ucas_code": "C500",
+      "minimum_entry_standard": [
+        "AAA (A-level)",
+        "38 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-molecular-bioengineering-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/molecular-bioengineering/",
+      "listing_number": 69,
+      "option_index": 0,
+      "title": "Molecular Bioengineering",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": "H160",
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-molecular-bioengineering-with-a-year-abroad-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/molecular-bioengineering/",
+      "listing_number": 69,
+      "option_index": 1,
+      "title": "Molecular Bioengineering with a Year Abroad",
+      "qualification": "MEng",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-molecular-bioengineering-with-a-year-in-industry-meng",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/molecular-bioengineering/",
+      "listing_number": 69,
+      "option_index": 2,
+      "title": "Molecular Bioengineering with a Year in Industry",
+      "qualification": "MEng",
+      "duration": "5 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington",
+        "White City"
+      ],
+      "department": "Department of Bioengineering",
+      "ucas_code": null,
+      "minimum_entry_standard": [
+        "A*AA (A-level)",
+        "39 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-physics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/physics-bsc/",
+      "listing_number": 70,
+      "option_index": 0,
+      "title": "Physics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Physics",
+      "ucas_code": "F300",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-physics-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/physics-msci/",
+      "listing_number": 71,
+      "option_index": 0,
+      "title": "Physics",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Physics",
+      "ucas_code": "F303",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-physics-with-a-year-abroad-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/physics-msci/",
+      "listing_number": 71,
+      "option_index": 1,
+      "title": "Physics with a Year Abroad",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Physics",
+      "ucas_code": "F309",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": null,
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-physics-with-theoretical-physics-msci",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/physics-theoretical-msci/",
+      "listing_number": 72,
+      "option_index": 0,
+      "title": "Physics with Theoretical Physics",
+      "qualification": "MSci",
+      "duration": "4 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Physics",
+      "ucas_code": "F390",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    },
+    {
+      "id": "imperial-physics-with-theoretical-physics-bsc",
+      "source_url": "https://www.imperial.ac.uk/study/courses/undergraduate/2027/physics-theoretical-bsc/",
+      "listing_number": 73,
+      "option_index": 0,
+      "title": "Physics with Theoretical Physics",
+      "qualification": "BSc",
+      "duration": "3 years",
+      "start_date": "October 2027",
+      "study_mode": "Full-time",
+      "locations": [
+        "South Kensington"
+      ],
+      "department": "Department of Physics",
+      "ucas_code": "F325",
+      "minimum_entry_standard": [
+        "A*A*A (A-level)",
+        "40 points (International Baccalaureate)"
+      ],
+      "overseas_fee": {
+        "amount_gbp": 47800,
+        "period": "year",
+        "entry_year": 2027,
+        "academic_year": null
+      },
+      "application_url": "https://www.ucas.com/dashboard#/"
+    }
+  ]
+}
